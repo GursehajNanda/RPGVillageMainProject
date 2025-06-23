@@ -1,0 +1,54 @@
+{
+    "name": "ScreenHandlingInput",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "aba04e7c-6500-4aab-a62d-33fd83a06888",
+            "actions": [
+                {
+                    "name": "OnDrag",
+                    "type": "Button",
+                    "id": "d289f115-5281-4a5e-804d-3b007e1e2b22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnClick",
+                    "type": "Button",
+                    "id": "67a6d54e-4fb4-4e1b-b25e-6ae3e31a80cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c316d2ac-dd68-4de0-bf84-b8bc30acb335",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnDrag",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1c1cf67f-75f9-4d37-a72f-0894cdf539a3",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

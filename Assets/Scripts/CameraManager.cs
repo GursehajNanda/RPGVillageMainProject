@@ -44,8 +44,10 @@ public class CameraManager : MonoBehaviour
         Vector2 worldPos = m_camera.ScreenToWorldPoint(mousePos);
 
         Collider2D hit = Physics2D.OverlapPoint(worldPos, m_clickableLayerMask);
+        if(hit == null) return;
+
         CameraTransition transition = hit?.GetComponent<CameraTransition>();
-        if (hit != null && transition != null)
+        if (transition != null)
         {
                
             SwitchVirtualCameras(transition.VirtualCamera,m_currentVirtualCamera);
@@ -60,6 +62,12 @@ public class CameraManager : MonoBehaviour
                 m_focusObject.SetActive(true);
             }
 
+        }
+
+        SceneTransition sceneTransition = hit?.GetComponent<SceneTransition>();
+        if (sceneTransition != null)
+        {
+            sceneTransition.LoadScene();
         }
     }
 

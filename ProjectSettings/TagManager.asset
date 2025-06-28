@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Leafs
+  - Rain
+  - Wind
+  - Thunder
+  - Fog
+  - GlobalLight
+  - Sun
+  - Moon
+  - OrbitCenter
+  - OutdoorLight
+  - IndoorLight
   layers:
   - Default
   - TransparentFX
@@ -49,4 +60,19 @@ TagManager:
     locked: 0
   - name: AbovePlayer
     uniqueID: 1572288079
+    locked: 0
+  - name: Effects
+    uniqueID: 1054578841
+    locked: 0
+  - name: Weather
+    uniqueID: 926296801
+    locked: 0
+  - name: GroundInterioir
+    uniqueID: 3920863137
+    locked: 0
+  - name: InterioirPlayer'
+    uniqueID: 3612621419
+    locked: 0
+  - name: InteriorAbovePlayer
+    uniqueID: 199683791
     locked: 0

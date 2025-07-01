@@ -10,6 +10,8 @@ public class BridgeCollider : MonoBehaviour
     private BoxCollider2D m_collider2;
     Vector3 offset;
     private BoxCollider2D m_mainCollider;
+    [SerializeField]
+    private LayerMask m_targetLayerMask;
 
     private void Start()
     {
@@ -19,9 +21,11 @@ public class BridgeCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Player"))
+        if ((m_targetLayerMask.value & (1 << collision.gameObject.layer)) != 0)
         {
- 
+
+            Debug.Log("1");
+
             Vector3 playerPosition = collision.transform.position;
             Vector3 colliderPosition = transform.position;
 
@@ -39,9 +43,19 @@ public class BridgeCollider : MonoBehaviour
 
             if (Mathf.Abs(offset.x) < Mathf.Abs(offset.y))
             {
-                //collision.GetComponent<PlayerController>().SetSortingLayer("AbovePlayer", 1);
-                m_collider1.enabled = true;
-                m_collider2.enabled = true;
+
+                Debug.Log("2");
+
+                SpriteRenderer renderer = collision?.GetComponentInChildren<SpriteRenderer>();
+
+                if (renderer)
+                {
+                    Debug.Log("3");
+                    renderer.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "AbovePlayer";
+                    renderer.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    m_collider1.enabled = true;
+                    m_collider2.enabled = true;
+                }
             }
         }
 
@@ -49,7 +63,8 @@ public class BridgeCollider : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+
+        if ((m_targetLayerMask.value & (1 << collision.gameObject.layer)) != 0)
         {
             Vector3 playerPosition = collision.transform.position;
             Vector3 colliderPosition = transform.position;
@@ -58,9 +73,15 @@ public class BridgeCollider : MonoBehaviour
 
             if (Mathf.Abs(offset.x) < Mathf.Abs(offset.y))
             {
-                //collision.GetComponent<PlayerController>().SetSortingLayer("Player", 0);
-                m_collider1.enabled = false;
-                m_collider2.enabled = false;
+                
+                SpriteRenderer renderer = collision?.GetComponentInChildren<SpriteRenderer>();
+                if (renderer)
+                {
+                    renderer.sortingLayerName = "Player";
+                    renderer.sortingOrder = 0;
+                    m_collider1.enabled = false;
+                    m_collider2.enabled = false;
+                }
             }
 
         }

@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2517520716187703608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7234737346824944383}
+  - component: {fileID: -7866453520742847723}
+  m_Layer: 0
+  m_Name: GoToDestinationWhileCarrying
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7234737346824944383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517520716187703608}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7866453520742847723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2517520716187703608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_actionAnimClips:
+  - AnimationState: CarryingIdleDown
+    AnimationFrames:
+    - {fileID: -1606814706, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 0
+    FrameSpeed: 0
+    AnimationEvents: 0
+  - AnimationState: CarryingIdleUp
+    AnimationFrames:
+    - {fileID: 1383209855, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 0
+    FrameSpeed: 0
+    AnimationEvents: 0
+  - AnimationState: CarryingIdleLeft
+    AnimationFrames:
+    - {fileID: -1854515848, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 0
+    FrameSpeed: 0
+    AnimationEvents: 0
+  - AnimationState: CarryingIdleRight
+    AnimationFrames:
+    - {fileID: -89599952, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 0
+    FrameSpeed: 0
+    AnimationEvents: 0
+  - AnimationState: CarryingWalkDown
+    AnimationFrames:
+    - {fileID: 880949581, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: -1606814706, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: -1118522274, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 1
+    FrameSpeed: 1
+    AnimationEvents: 0
+  - AnimationState: CarryingWalkUp
+    AnimationFrames:
+    - {fileID: -1702783847, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: 1383209855, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: 1823777602, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 1
+    FrameSpeed: 1
+    AnimationEvents: 0
+  - AnimationState: CarryingWalkLeft
+    AnimationFrames:
+    - {fileID: -1766052203, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: -1854515848, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: 1232354782, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 1
+    FrameSpeed: 1
+    AnimationEvents: 0
+  - AnimationState: CarryingWalkRight
+    AnimationFrames:
+    - {fileID: -2059076691, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: -89599952, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    - {fileID: -1431452974, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+    Loop: 1
+    FrameSpeed: 1
+    AnimationEvents: 0
+  m_actionState: 
+  m_doesContainIdleAndMovingAnimStates: 1
+  m_idleKeyStates:
+    Up: CarryingIdleUp
+    Down: CarryingIdleDown
+    Left: CarryingIdleLeft
+    Right: CarryingIdleRight
+  m_moveKeyStates:
+    Up: CarryingWalkUp
+    Down: CarryingWalkDown
+    Left: CarryingWalkLeft
+    Right: CarryingWalkRight
+  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: 495c73bc54a3a0a4ab60a707ab3f6fb5, type: 2}

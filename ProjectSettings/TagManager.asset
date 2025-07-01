@@ -23,8 +23,8 @@ TagManager:
   - Water
   - UI
   - TransitionsLayer
-  - 
-  - 
+  - Collidable
+  - Interactable
   - 
   - 
   - 

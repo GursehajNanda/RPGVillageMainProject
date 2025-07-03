@@ -24,7 +24,6 @@ public class BridgeCollider : MonoBehaviour
         if ((m_targetLayerMask.value & (1 << collision.gameObject.layer)) != 0)
         {
 
-            Debug.Log("1");
 
             Vector3 playerPosition = collision.transform.position;
             Vector3 colliderPosition = transform.position;
@@ -42,15 +41,12 @@ public class BridgeCollider : MonoBehaviour
 
 
             if (Mathf.Abs(offset.x) < Mathf.Abs(offset.y))
-            {
-
-                Debug.Log("2");
+            {   
 
                 SpriteRenderer renderer = collision?.GetComponentInChildren<SpriteRenderer>();
 
                 if (renderer)
                 {
-                    Debug.Log("3");
                     renderer.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "AbovePlayer";
                     renderer.GetComponent<SpriteRenderer>().sortingOrder = 1;
                     m_collider1.enabled = true;

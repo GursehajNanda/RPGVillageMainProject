@@ -25,7 +25,7 @@ TagManager:
   - TransitionsLayer
   - Collidable
   - Interactable
-  - 
+  - Player
   - 
   - 
   - 
@@ -70,7 +70,7 @@ TagManager:
   - name: GroundInterioir
     uniqueID: 3920863137
     locked: 0
-  - name: InterioirPlayer'
+  - name: InterioirPlayer
     uniqueID: 3612621419
     locked: 0
   - name: InteriorAbovePlayer

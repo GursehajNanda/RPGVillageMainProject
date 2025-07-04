@@ -1,28 +1,29 @@
 using UnityEngine;
 using KambojGames.Pathfinding2D;
-using KambojGames.DialogueSystem;
+using KambojGames.Utilities2D.Attributes;
 
 public class GoToDestination : NpcAction
 {
     [Tooltip("Starting position for npc, if any")]
+    [SerializeField] float m_npcMoveSpeed = 1.0f;
     [SerializeField] Vector2 m_startingPosition;
     [SerializeField] Vector2 m_destinationPosition;
 
     [Header("PathFinding")]
-    [SerializeField] float m_npcMoveSpeed = 1.0f;
-    [SerializeField] float m_smothingfactor = 2.5f;
-    [SerializeField] float m_distBetweenWayPoints = 0.4f;
-    [SerializeField] float m_pathUpdateInterval = 0.5f;
-
-    [Header("Dialogues")]
-    [SerializeField] private ConditionalDialogue m_actionDialogue;
+    [SerializeField] bool m_usePathfinding = true;
+    [SerializeField][ConditionalField("m_usePathfinding")]float m_smothingfactor = 2.5f;
+    [SerializeField][ConditionalField("m_usePathfinding")]float m_distBetweenWayPoints = 0.4f;
+    [SerializeField][ConditionalField("m_usePathfinding")]float m_pathUpdateInterval = 0.5f;
+ 
 
     [Header("Game Event")]
     [SerializeField]GameEvent m_actionToDoWhenReachedDestination;
 
     private AIPathfinding2D m_pathFinding;
-    private DialogueInteraction m_dI;
     NpcBehaviourControl m_controller;
+    NpcFollowSpline m_followSpline;
+
+ 
 
     public override void Initialize(Rigidbody2D rb, NpcTaskMediatorSO mediator)
     {
@@ -32,37 +33,89 @@ public class GoToDestination : NpcAction
             Rb.transform.position = m_startingPosition;
         }
 
-        m_pathFinding = new AIPathfinding2D();
-        m_pathFinding.InitializePath(Rb, m_destinationPosition, m_smothingfactor, m_distBetweenWayPoints, m_pathUpdateInterval);
-        m_controller = rb.GetComponent<NpcBehaviourControl>();
-        m_dI = rb.GetComponentInChildren<DialogueInteraction>();
-        m_dI.Initialzie();
-        m_dI.AddDialogueObject(m_actionDialogue.GetDialogue());
+        m_pathFinding = null;
+        m_followSpline = null;
+
+        if (m_usePathfinding)
+        {
+            m_pathFinding = new AIPathfinding2D();
+            m_pathFinding.InitializePath(Rb, m_destinationPosition, m_smothingfactor, m_distBetweenWayPoints, m_pathUpdateInterval);
+            m_controller = rb.GetComponent<NpcBehaviourControl>();
+        }
+        else
+        {
+            m_followSpline = new();
+            m_followSpline.Initialize(Rb, m_controller.GetSplineActionPath(ActionID),m_npcMoveSpeed);
+        }
+
+      
     }
     public override void DoAction()
     {
         base.DoAction();
 
-        if (m_pathFinding != null)
+        NpcSpeedModifier();
+
+        bool canMove = CharComp.IsPassable() && !DI.IsInteractingWithDialogue();
+        Vector2 moveVec = Rb.velocity.normalized;
+
+        if (canMove)
+        {
+            ActionMovingAnimationState(moveVec);
+        }
+
+        if (m_usePathfinding && m_pathFinding != null)
         {
             if (m_pathFinding.isPathCompleted())
             {
-                m_dI.ClearDialogueObject();
-                Rb.velocity = Vector2.zero;
-                m_pathFinding = null;
-                IsActionCompleted = true;
-                m_dI = null;
-                m_controller = null;
-                m_actionToDoWhenReachedDestination?.Raise();
-               
+                EndAction();
+
+                //if (Rb.velocity.sqrMagnitude < 0.001f)
+                //{
+                //    m_pathFinding = null;
+                //}
             }
-            else
+            else if (canMove)
             {
                 m_pathFinding.MoveToPath(m_destinationPosition, m_npcMoveSpeed);
+
             }
         }
-     
-       
-        
+        else if (!m_usePathfinding && m_followSpline != null)
+        {
+            if (m_followSpline.IsPathCompleted())
+            {
+                EndAction();
+            }
+            else if (canMove)
+            {
+                m_followSpline.Update();
+            }
+        }
+
+
+
+    }
+
+    //For testing
+    private void NpcSpeedModifier()
+    {
+        float baseNpcSpeed = 1;
+        float baseDayLengthInSeconds = 24f * 60f;
+
+        float currentDayLengthInSecs = ClimateData.Instance.MinutesToLastADay * 60;
+
+        m_npcMoveSpeed = baseNpcSpeed * (baseDayLengthInSeconds / currentDayLengthInSecs);
+    }
+
+    private void EndAction()
+    {
+        DI.ClearDialogueObject();
+        Rb.velocity = Vector2.zero;
+        m_pathFinding = null;
+        m_followSpline = null;
+        m_controller = null;
+        IsActionCompleted = true;
+        m_actionToDoWhenReachedDestination?.Raise();
     }
 }

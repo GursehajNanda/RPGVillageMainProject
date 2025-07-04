@@ -42,30 +42,9 @@ MonoBehaviour:
           m_value: {fileID: 11400000, guid: fe3285cdcb425cb49bae4cb0fef40b1a, type: 2}
     m_actionStartTime: 10
     m_actionEndTime: 11
-    m_haveLocationToPerform: 1
-    m_usePathFinding: 1
-    m_locationToPeformAction: {x: 9.25, y: 0.55}
-  - m_npcAction: {fileID: 8991032479035376295, guid: e48ca23a3e9febc42ae2a540af591112, type: 3}
-    m_actionDialogue:
-      m_dialogues:
-        m_keyValuePairs: []
-    m_stoppedWithinActionDialogue:
-      m_dialogues:
-        m_keyValuePairs:
-        - m_key: 43
-          m_value: {fileID: 11400000, guid: ac9b471723b7f8e43bdf1d86d6386563, type: 2}
-        - m_key: 20
-          m_value: {fileID: 11400000, guid: fe3285cdcb425cb49bae4cb0fef40b1a, type: 2}
-    m_actionStartTime: 11
-    m_actionEndTime: 17
     m_haveLocationToPerform: 0
-    m_usePathFinding: 1
+    m_usePathFinding: 0
     m_locationToPeformAction: {x: 9.25, y: 0.55}
-  m_weatherType: -1
   m_haveActions: 1
   m_delayBetweenActions: 2
-  m_IsNotWeatherFallbackBehaviour: 1
-  m_behaviourTimeRange:
-    min: 0
-    max: 23
   m_taskMediator: {fileID: 11400000, guid: 6f1a3d668146c3f46be7031a9dd2cd3b, type: 2}

@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcStates:
   - ActionID: SellStrawberriesToCarryingNpc
-    CurrentMap: VillageBottom
+    CurrentScene: 
+    NextActionScene: 
     CanProceed: 0
+  m_npcActiveInScene:
+    m_keyValuePairs: []

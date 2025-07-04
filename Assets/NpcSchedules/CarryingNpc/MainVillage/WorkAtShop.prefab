@@ -63,3 +63,4 @@ MonoBehaviour:
   m_teleportDestination: {x: 32.27, y: -6.03, z: 0}
   m_sortingLayerName: InterioirPlayer
   m_sortingLayerOrder: 0
+  m_moveVectorAfterTeleportation: {x: -1, y: 0}

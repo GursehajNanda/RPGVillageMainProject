@@ -50,25 +50,25 @@ MonoBehaviour:
     AnimationFrames:
     - {fileID: -1606814706, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
-    FrameSpeed: 0
+    FrameSpeed: 1
     AnimationEvents: 0
   - AnimationState: CarryingIdleUp
     AnimationFrames:
     - {fileID: 1383209855, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
-    FrameSpeed: 0
+    FrameSpeed: 1
     AnimationEvents: 0
   - AnimationState: CarryingIdleLeft
     AnimationFrames:
     - {fileID: -1854515848, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
-    FrameSpeed: 0
+    FrameSpeed: 1
     AnimationEvents: 0
   - AnimationState: CarryingIdleRight
     AnimationFrames:
     - {fileID: -89599952, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
-    FrameSpeed: 0
+    FrameSpeed: 1
     AnimationEvents: 0
   - AnimationState: CarryingWalkDown
     AnimationFrames:

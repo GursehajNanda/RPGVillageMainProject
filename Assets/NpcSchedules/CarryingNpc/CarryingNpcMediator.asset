@@ -14,14 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcStates:
   - ActionID: GoToFarmhouse
-    CurrentMap: MainVillage
-    CanProceed: 1
+    CurrentScene: MainVillage
+    NextActionScene: VillageBottom
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
+  - ActionID: BuyStrawberriesFromFarmer
+    CurrentScene: VillageBottom
+    NextActionScene: VillageBottom
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
   - ActionID: GoToShop
-    CurrentMap: MainVillage
-    CanProceed: 0
-  - ActionID: WorkAtShop
-    CurrentMap: MainVillage
-    CanProceed: 0
+    CurrentScene: MainVillage
+    NextActionScene: MainVillage
+    CanProceed: 1
+    ActionStarted: 1
+    IsTaskFinished: 0
   m_npcActiveInScene:
     m_keyValuePairs:
     - m_key: MainVillage

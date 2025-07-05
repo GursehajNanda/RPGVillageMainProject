@@ -7,7 +7,7 @@ public class TeleportToDestination : NpcAction
     [SerializeField] string m_sortingLayerName;
     [SerializeField] int m_sortingLayerOrder;
     [SerializeField] Vector2 m_moveVectorAfterTeleportation;
-
+    [SerializeField] bool m_completeActionOnTeleportation;
     private SpriteRenderer m_sprite;
     private bool m_teleported;
 
@@ -32,6 +32,10 @@ public class TeleportToDestination : NpcAction
         m_sprite.sortingLayerName = m_sortingLayerName;
         m_sprite.sortingOrder = m_sortingLayerOrder;
         m_teleported = true;
+        if(m_completeActionOnTeleportation)
+        {
+            IsActionCompleted = true;
+        }
 
     }
 }

@@ -104,6 +104,7 @@ MonoBehaviour:
     AnimationEvents: 0
   m_actionAnimState: 
   m_weatherType: -1
+  m_actionTimeRange: {x: 10, y: 11}
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -117,16 +118,15 @@ MonoBehaviour:
     Right: CarryingWalkRight
   NextAction: {fileID: 8991032479035376295, guid: e48ca23a3e9febc42ae2a540af591112, type: 3}
   m_haveNextAction: 1
-  m_nextActionDelay: 2
-  NextActionID: WorkAtShop
-  m_startingPosition: {x: 4, y: -9.76}
-  m_destinationPosition: {x: 9.25, y: 0.55}
-  m_usePathfinding: 0
-  m_npcMoveSpeed: 1
-  m_smothingfactor: 1.5
-  m_distBetweenWayPoints: 0.4
-  m_pathUpdateInterval: 0.5
+  m_nextActionDelay: 0
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_usePathfinding: 1
+  m_startingPosition: {x: 4, y: -9.76}
+  m_destinationPosition: {x: 9.25, y: 0.55}
+  m_smothingfactor: 2.5
+  m_distBetweenWayPoints: 0.4
+  m_pathUpdateInterval: 0.5
   m_actionToDoWhenReachedDestination: {fileID: 0}

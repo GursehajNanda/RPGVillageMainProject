@@ -6,11 +6,11 @@ public class GoToDestination : NpcAction
 {
     [Tooltip("Starting position for npc, if any")]
     [SerializeField] float m_npcMoveSpeed = 1.0f;
-    [SerializeField] Vector2 m_startingPosition;
-    [SerializeField] Vector2 m_destinationPosition;
 
     [Header("PathFinding")]
     [SerializeField] bool m_usePathfinding = true;
+    [SerializeField][ConditionalField("m_usePathfinding")] Vector2 m_startingPosition;
+    [SerializeField][ConditionalField("m_usePathfinding")] Vector2 m_destinationPosition;
     [SerializeField][ConditionalField("m_usePathfinding")]float m_smothingfactor = 2.5f;
     [SerializeField][ConditionalField("m_usePathfinding")]float m_distBetweenWayPoints = 0.4f;
     [SerializeField][ConditionalField("m_usePathfinding")]float m_pathUpdateInterval = 0.5f;
@@ -35,12 +35,12 @@ public class GoToDestination : NpcAction
 
         m_pathFinding = null;
         m_followSpline = null;
+        m_controller = rb.GetComponent<NpcBehaviourControl>();
 
         if (m_usePathfinding)
         {
             m_pathFinding = new AIPathfinding2D();
-            m_pathFinding.InitializePath(Rb, m_destinationPosition, m_smothingfactor, m_distBetweenWayPoints, m_pathUpdateInterval);
-            m_controller = rb.GetComponent<NpcBehaviourControl>();
+            m_pathFinding.InitializePath(Rb, m_destinationPosition, m_smothingfactor, m_distBetweenWayPoints, m_pathUpdateInterval);   
         }
         else
         {
@@ -48,52 +48,59 @@ public class GoToDestination : NpcAction
             m_followSpline.Initialize(Rb, m_controller.GetSplineActionPath(ActionID),m_npcMoveSpeed);
         }
 
-      
     }
     public override void DoAction()
     {
         base.DoAction();
 
-        NpcSpeedModifier();
-
-        bool canMove = CharComp.IsPassable() && !DI.IsInteractingWithDialogue();
-        Vector2 moveVec = Rb.velocity.normalized;
-
-        if (canMove)
+        if (!IsActionCompleted)
         {
-            ActionMovingAnimationState(moveVec);
-        }
+            NpcSpeedModifier();
 
-        if (m_usePathfinding && m_pathFinding != null)
+            bool canMove = CharComp.IsPassable() && !DI.IsInteractingWithDialogue();
+            Vector2 moveVec = Rb.velocity.normalized;
+            if(moveVec != Vector2.zero)
+            {
+                CharComp.MoveVector = moveVec;
+            }
+
+            if (canMove && Rb.velocity != Vector2.zero)
+            {
+                ActionMovingAnimationState(CharComp.MoveVector);
+            }
+            else
+            {
+                ActionIdleAnimationState(CharComp.MoveVector);
+            }
+
+            if (m_usePathfinding && m_pathFinding != null)
+            {
+                if (m_pathFinding.isPathCompleted())
+                {
+                    EndAction();
+                }
+                else if (canMove)
+                {
+                    m_pathFinding.MoveToPath(m_destinationPosition, m_npcMoveSpeed);
+
+                }
+            }
+            else if (!m_usePathfinding && m_followSpline != null)
+            {
+                if (m_followSpline.IsPathCompleted())
+                {
+                    EndAction();
+                }
+                else if (canMove)
+                {
+                    m_followSpline.Update();
+                }
+            }
+        }
+        else
         {
-            if (m_pathFinding.isPathCompleted())
-            {
-                EndAction();
-
-                //if (Rb.velocity.sqrMagnitude < 0.001f)
-                //{
-                //    m_pathFinding = null;
-                //}
-            }
-            else if (canMove)
-            {
-                m_pathFinding.MoveToPath(m_destinationPosition, m_npcMoveSpeed);
-
-            }
+            EndAction();
         }
-        else if (!m_usePathfinding && m_followSpline != null)
-        {
-            if (m_followSpline.IsPathCompleted())
-            {
-                EndAction();
-            }
-            else if (canMove)
-            {
-                m_followSpline.Update();
-            }
-        }
-
-
 
     }
 
@@ -110,6 +117,7 @@ public class GoToDestination : NpcAction
 
     private void EndAction()
     {
+        ActionIdleAnimationState(CharComp.MoveVector);
         DI.ClearDialogueObject();
         Rb.velocity = Vector2.zero;
         m_pathFinding = null;

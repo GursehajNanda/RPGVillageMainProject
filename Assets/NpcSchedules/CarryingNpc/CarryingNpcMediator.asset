@@ -31,6 +31,12 @@ MonoBehaviour:
     CanProceed: 1
     ActionStarted: 1
     IsTaskFinished: 0
+  - ActionID: LeaveShop
+    CurrentScene: MainVillage
+    NextActionScene: MainVillage
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
   m_npcActiveInScene:
     m_keyValuePairs:
     - m_key: MainVillage

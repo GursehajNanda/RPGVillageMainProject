@@ -13,38 +13,9 @@ MonoBehaviour:
   m_Name: CarryingNPC_MV_Behavior
   m_EditorClassIdentifier: 
   m_actionBehaviour:
-  - m_npcAction: {fileID: -7866453520742847723, guid: c2277617f9b9e684ba00d241f9ec259d, type: 3}
-    m_actionDialogue:
-      m_dialogues:
-        m_keyValuePairs: []
-    m_stoppedWithinActionDialogue:
-      m_dialogues:
-        m_keyValuePairs:
-        - m_key: 43
-          m_value: {fileID: 11400000, guid: ac9b471723b7f8e43bdf1d86d6386563, type: 2}
-        - m_key: 20
-          m_value: {fileID: 11400000, guid: fe3285cdcb425cb49bae4cb0fef40b1a, type: 2}
-    m_actionStartTime: 7
-    m_actionEndTime: 8
-    m_haveLocationToPerform: 1
-    m_usePathFinding: 1
-    m_locationToPeformAction: {x: 3.98, y: -10}
-  - m_npcAction: {fileID: -1092803159507426959, guid: e14e696a4458a114395c551cce472c72, type: 3}
-    m_actionDialogue:
-      m_dialogues:
-        m_keyValuePairs: []
-    m_stoppedWithinActionDialogue:
-      m_dialogues:
-        m_keyValuePairs:
-        - m_key: 43
-          m_value: {fileID: 11400000, guid: ac9b471723b7f8e43bdf1d86d6386563, type: 2}
-        - m_key: 20
-          m_value: {fileID: 11400000, guid: fe3285cdcb425cb49bae4cb0fef40b1a, type: 2}
-    m_actionStartTime: 10
-    m_actionEndTime: 11
-    m_haveLocationToPerform: 0
-    m_usePathFinding: 0
-    m_locationToPeformAction: {x: 9.25, y: 0.55}
+  - {fileID: -7866453520742847723, guid: c2277617f9b9e684ba00d241f9ec259d, type: 3}
+  - {fileID: -1092803159507426959, guid: e14e696a4458a114395c551cce472c72, type: 3}
+  - {fileID: 3103233866641629907, guid: eac8fef8e82ec7a4793f4c0c832c60e1, type: 3}
   m_haveActions: 1
-  m_delayBetweenActions: 2
+  m_delayBetweenActions: 1
   m_taskMediator: {fileID: 11400000, guid: 6f1a3d668146c3f46be7031a9dd2cd3b, type: 2}

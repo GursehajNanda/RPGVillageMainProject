@@ -32,6 +32,7 @@ public class TeleportToDestination : NpcAction
         m_sprite.sortingLayerName = m_sortingLayerName;
         m_sprite.sortingOrder = m_sortingLayerOrder;
         m_teleported = true;
+        ActionIdleAnimationState(m_moveVectorAfterTeleportation);
         if(m_completeActionOnTeleportation)
         {
             IsActionCompleted = true;

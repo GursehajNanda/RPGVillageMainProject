@@ -48,13 +48,16 @@ public class GoToDestination : NpcAction
             m_followSpline.Initialize(Rb, m_controller.GetSplineActionPath(ActionID),m_npcMoveSpeed);
         }
 
+        IsActionCompleted = false;
     }
     public override void DoAction()
     {
         base.DoAction();
 
+       
         if (!IsActionCompleted)
         {
+
             NpcSpeedModifier();
 
             bool canMove = CharComp.IsPassable() && !DI.IsInteractingWithDialogue();
@@ -77,6 +80,7 @@ public class GoToDestination : NpcAction
             {
                 if (m_pathFinding.isPathCompleted())
                 {
+                    Rb.velocity = Vector2.zero;
                     EndAction();
                 }
                 else if (canMove)
@@ -89,6 +93,7 @@ public class GoToDestination : NpcAction
             {
                 if (m_followSpline.IsPathCompleted())
                 {
+                    Rb.velocity = Vector2.zero;
                     EndAction();
                 }
                 else if (canMove)
@@ -117,13 +122,17 @@ public class GoToDestination : NpcAction
 
     private void EndAction()
     {
+        if (m_usePathfinding && m_pathFinding == null) return;
+        if (!m_usePathfinding && m_followSpline == null) return;
+
         ActionIdleAnimationState(CharComp.MoveVector);
         DI.ClearDialogueObject();
-        Rb.velocity = Vector2.zero;
         m_pathFinding = null;
         m_followSpline = null;
         m_controller = null;
         IsActionCompleted = true;
         m_actionToDoWhenReachedDestination?.Raise();
+       
+
     }
 }

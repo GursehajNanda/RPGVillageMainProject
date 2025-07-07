@@ -70,7 +70,7 @@ TagManager:
   - name: GroundInterioir
     uniqueID: 3920863137
     locked: 0
-  - name: InterioirPlayer
+  - name: InteriorPlayer
     uniqueID: 3612621419
     locked: 0
   - name: InteriorAbovePlayer

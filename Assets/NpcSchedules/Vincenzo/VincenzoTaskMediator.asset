@@ -34,6 +34,13 @@ MonoBehaviour:
     CanProceed: 0
     ActionStarted: 0
     IsTaskFinished: 0
+  - ActionID: Vincenzo_BuyStocksFromDiego
+    CurrentScene: VillageBottom
+    NextActionScene: VillageBottom
+    ActionDays: -1
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
   m_npcActiveInScene:
     m_keyValuePairs:
     - m_key: MainVillage

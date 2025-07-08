@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1398802614367042122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2163717054208494137}
+  - component: {fileID: -3297406357672171910}
+  m_Layer: 0
+  m_Name: Vincenzo_BuyStocksFromDiego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2163717054208494137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398802614367042122}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3297406357672171910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398802614367042122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startingPosition: {x: -17.69, y: 5.81}
+  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: -1, y: 0}
+  m_actionId: Vincenzo_BuyStocksFromDiego
+  m_actionAnimState: 
+  m_weatherType: -1
+  m_actionTimeRange: {x: 9, y: 10}
+  m_doesContainIdleAndMovingAnimStates: 0
+  m_idleKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  m_moveKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  NextAction: {fileID: 0}
+  m_haveNextAction: 0
+  m_nextActionDelay: 2
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_dialogueTypeActionID: ShopExchangeBetweenVincenzoAndDiego
+  m_actionDialogues:
+  - m_dialogues: {fileID: 11400000, guid: f3c8431682f16bf45913f96f491bec8d, type: 2}
+    m_dialogueTurn: 1
+  - m_dialogues: {fileID: 11400000, guid: bb4c91764aff82040b46ff5cf88dddaa, type: 2}
+    m_dialogueTurn: 3
+  - m_dialogues: {fileID: 11400000, guid: d9a3c1946c102ce45bce429713f81cae, type: 2}
+    m_dialogueTurn: 5
+  m_npcFaceDirection: {x: -1, y: 0}
+  m_isEntryPointForConversation: 1
+  m_NumOfInteractingNPCS: 2
+  m_requirePlayerToStarConversation: 0
+  m_waitTimeInMinsToStarConversation: 0

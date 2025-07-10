@@ -65,7 +65,7 @@ MonoBehaviour:
     Right: 
   NextAction: {fileID: 0}
   m_haveNextAction: 0
-  m_nextActionDelay: 2
+  m_nextActionDelay: 1
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &244827097848993440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3708543935256664312}
+  - component: {fileID: 5158214507615811429}
+  m_Layer: 0
+  m_Name: Vincenzo_PickUpCrateFromFarmhouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3708543935256664312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244827097848993440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5158214507615811429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244827097848993440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startingPosition: {x: -17.69, y: 5.81}
+  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: 1}
+  m_actionId: Vincenzo_PickUpCrateFromFarmhouse
+  m_actionAnimState: 
+  m_weatherType: -1
+  m_actionTimeRange: {x: 10, y: 10.25}
+  m_doesContainIdleAndMovingAnimStates: 0
+  m_idleKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  m_moveKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  NextAction: {fileID: 967081161284261497, guid: 19853d12d3a2af146a971dafde36fa33, type: 3}
+  m_haveNextAction: 1
+  m_nextActionDelay: 1
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: -1, y: 0}
+  m_teleportOnEnd: 0
+  m_usePathfinding: 0
+  m_destinationPosition: {x: 0, y: 0}
+  m_smothingfactor: 2.5
+  m_distBetweenWayPoints: 0.4
+  m_pathUpdateInterval: 0.5
+  m_teleportationPos: {x: 0, y: 0}
+  m_teleportSortingLayerName: 
+  m_teleportSortingLayerOrder: 0
+  m_completeActionOnReactingDestination: 1
+  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: a2e1bb8f813d92f488be2f1567119779, type: 2}

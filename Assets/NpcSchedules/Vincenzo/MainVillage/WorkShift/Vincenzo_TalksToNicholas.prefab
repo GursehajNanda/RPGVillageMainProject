@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &792937657273995448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4582365633587550365}
+  - component: {fileID: -4487910579557379728}
+  m_Layer: 0
+  m_Name: Vincenzo_TalksToNicholas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4582365633587550365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792937657273995448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4487910579557379728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792937657273995448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startingPosition: {x: 0, y: 0}
+  m_sortingLayerName: InterioirPlayer
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: 1}
+  m_actionId: Vincenzo_TalksToNicholas
+  m_actionAnimState: 
+  m_weatherType: -1
+  m_actionTimeRange: {x: 17, y: 18}
+  NextAction: {fileID: -6028780341197642566, guid: 0b17d5e2111def044b1d2350a086d7db, type: 3}
+  m_haveNextAction: 1
+  m_nextActionDelay: 1
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_dialogueTypeActionID: EndShift_TalkBetweenNicholasAndVincenzo
+  m_actionDialogues:
+  - m_dialogues: {fileID: 11400000, guid: 078f8a3207825ae4c98515089acd188e, type: 2}
+    m_dialogueTurn: 1
+  - m_dialogues: {fileID: 11400000, guid: 851963ceabe8fd84daf8efb2b8e226e6, type: 2}
+    m_dialogueTurn: 3
+  m_npcFaceDirection: {x: 0, y: 1}
+  m_isEntryPointForConversation: 1
+  m_NumOfInteractingNPCS: 2
+  m_requirePlayerToStarConversation: 0
+  m_waitTimeInMinsToStarConversation: 0

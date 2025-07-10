@@ -15,6 +15,7 @@ MonoBehaviour:
   m_actionBehaviour:
   - {fileID: 5127015891248719519, guid: 116426d4ebe91e04aae2a161a92090c9, type: 3}
   - {fileID: -3297406357672171910, guid: 70e02e6d24693c04480868747a8cf4db, type: 3}
+  - {fileID: 5158214507615811429, guid: 1ded8b3d697718d4c97868aa31576d15, type: 3}
   m_haveActions: 1
   m_delayBetweenActions: 2
   m_taskMediator: {fileID: 11400000, guid: 6f1a3d668146c3f46be7031a9dd2cd3b, type: 2}

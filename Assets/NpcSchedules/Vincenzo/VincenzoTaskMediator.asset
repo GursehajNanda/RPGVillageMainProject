@@ -41,6 +41,20 @@ MonoBehaviour:
     CanProceed: 0
     ActionStarted: 0
     IsTaskFinished: 0
+  - ActionID: Vincenzo_PickUpCrateFromFarmhouse
+    CurrentScene: VillageBottom
+    NextActionScene: VillageBottom
+    ActionDays: -1
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
+  - ActionID: Vincenzo_DoWorkShift
+    CurrentScene: VillageBottom
+    NextActionScene: VillageBottom
+    ActionDays: -1
+    CanProceed: 0
+    ActionStarted: 0
+    IsTaskFinished: 0
   m_npcActiveInScene:
     m_keyValuePairs:
     - m_key: MainVillage

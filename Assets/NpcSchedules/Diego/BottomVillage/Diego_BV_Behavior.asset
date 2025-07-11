@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Diego_BV_Behavior
   m_EditorClassIdentifier: 
   m_actionBehaviour:
-  - {fileID: 1951722169344485093, guid: 044a60946cd024b4c917dd98966cf65e, type: 3}
-  m_haveActions: 0
-  m_delayBetweenActions: 0
-  m_taskMediator: {fileID: 11400000, guid: 6492235ab50745347a23cb046b17cf5b, type: 2}
+  - m_action: {fileID: 1951722169344485093, guid: 044a60946cd024b4c917dd98966cf65e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Diego_SellStocksToVincenzo
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Diego_SellStocksToVincenzo
+  m_sceneMediator: {fileID: 11400000, guid: b4a968ce426db16408b086980eb610da, type: 2}

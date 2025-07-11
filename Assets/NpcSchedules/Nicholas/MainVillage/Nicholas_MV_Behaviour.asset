@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: Nicholas_MV_Behaviour
   m_EditorClassIdentifier: 
   m_actionBehaviour:
-  - {fileID: 3907332506526772266, guid: 172ce0fed82b0c34da29570d6ab88431, type: 3}
-  m_haveActions: 0
-  m_delayBetweenActions: 0
-  m_taskMediator: {fileID: 0}
+  - m_action: {fileID: -391229307393240060, guid: 172ce0fed82b0c34da29570d6ab88431, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_TalkToVincenzoAtEndShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Nicholas_TalkToVincenzoAtEndShift
+  m_sceneMediator: {fileID: 11400000, guid: 775b8ce5799ac594f9cb929ed2aa078a, type: 2}

@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2527005512757845713}
+  - component: {fileID: -2195088315190920437}
   m_Layer: 0
   m_Name: Vincenzo_GoToHouse
   m_TagString: Untagged
@@ -31,3 +32,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2195088315190920437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2687115419076424554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startingPosition: {x: 9.25, y: 0.05}
+  m_sortingLayerName: Player
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: -1}
+  m_actionId: Vincenzo_GoToHouse
+  m_actionAnimState: 
+  m_weatherType: -1
+  m_actionTimeRange: {x: 20, y: 21}
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: 1, y: 0}
+  m_doesContainIdleAndMovingAnimStates: 1
+  m_idleKeyStates:
+    Up: CarryingIdleUp
+    Down: CarryingIdleDown
+    Left: CarryingIdleLeft
+    Right: CarryingIdleRight
+  m_moveKeyStates:
+    Up: CarryingWalkUp
+    Down: CarryingWalkDown
+    Left: CarryingWalkLeft
+    Right: CarryingWalkRight
+  m_usePathfinding: 1
+  m_destinationPosition: {x: -0.51, y: 6.75}
+  m_smothingfactor: 2.5
+  m_distBetweenWayPoints: 0.4
+  m_pathUpdateInterval: 0.5
+  m_teleportOnEnd: 1
+  m_teleportationPos: {x: -0.316, y: 14.88}
+  m_teleportSortingLayerName: InteriorPlayer
+  m_teleportSortingLayerOrder: 0
+  m_completeActionOnReactingDestination: 0
+  m_actionToDoWhenReachedDestination: {fileID: 0}

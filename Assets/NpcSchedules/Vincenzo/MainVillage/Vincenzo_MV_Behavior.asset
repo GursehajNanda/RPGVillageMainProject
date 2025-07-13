@@ -39,9 +39,9 @@ MonoBehaviour:
     m_taksMediator:
       m_npcStates:
         ActionID: Vincenzo_GoToFarmhouse
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
+        CanProceed: 1
+        ActionStarted: 1
+        IsTaskFinished: 1
         IsActionSkippable: 1
         ActionDays: -1
         ActionScene: MainVillage
@@ -83,6 +83,28 @@ MonoBehaviour:
     m_taksMediator:
       m_npcStates:
         ActionID: Vincenzo_LeaveShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToRestaraunt
+  - m_action: {fileID: -7034881014639213440, guid: 865b55447a1221c499dac01907e22d5e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: 65
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_LeaveHome
+  - m_action: {fileID: -2195088315190920437, guid: 17b4adc3ad27f8649bdbf425e7216c69, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToHouse
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0

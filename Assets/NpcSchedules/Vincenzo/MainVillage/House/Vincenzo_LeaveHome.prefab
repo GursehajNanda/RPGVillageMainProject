@@ -58,7 +58,7 @@ MonoBehaviour:
       m_keyValuePairs: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: 0, y: -1}
-  m_doesContainIdleAndMovingAnimStates: 0
+  m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: 
     Down: 

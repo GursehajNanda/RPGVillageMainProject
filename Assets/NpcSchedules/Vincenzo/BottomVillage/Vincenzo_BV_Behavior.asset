@@ -23,6 +23,28 @@ MonoBehaviour:
         IsActionSkippable: 1
         ActionDays: -1
         ActionScene: VillageBottom
+        NextActionID: Vincenzo_LeaveCrateInFarmhouse
+  - m_action: {fileID: 5722354302803851834, guid: 4bc029e610936ca44abf22390a22bb4f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_LeaveCrateInFarmhouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Vincenzo_MeetDiego
+  - m_action: {fileID: 6987069285772534557, guid: 956fdf48e2a6c694bbc1df531cb95b33, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_MeetDiego
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
         NextActionID: Vincenzo_BuyStocksFromDiego
   - m_action: {fileID: -3297406357672171910, guid: 70e02e6d24693c04480868747a8cf4db, type: 3}
     m_taksMediator:
@@ -66,6 +88,6 @@ MonoBehaviour:
         IsTaskFinished: 0
         IsActionSkippable: 1
         ActionDays: -1
-        ActionScene: MainVillage
+        ActionScene: VillageBottom
         NextActionID: Vincenzo_DoWorkShift
   m_sceneMediator: {fileID: 11400000, guid: 70dcac02d314f0648925f839e1dbfebb, type: 2}

@@ -18,3 +18,6 @@ MonoBehaviour:
       m_value: 0
     - m_key: VillageBottom
       m_value: 0
+  m_npcBehaviours:
+  - {fileID: 11400000, guid: 86bbd955b3f9ed44a9425b94fac2127f, type: 2}
+  m_taksMediatorsList: []

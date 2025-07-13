@@ -51,10 +51,7 @@ MonoBehaviour:
   m_actionId: Nicholas_TalkToVincenzoAtEndShift
   m_actionAnimState: 
   m_weatherType: -1
-  m_actionTimeRange: {x: 17, y: 18}
-  NextAction: {fileID: 0}
-  m_haveNextAction: 0
-  m_nextActionDelay: 2
+  m_actionTimeRange: {x: 11, y: 18}
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:

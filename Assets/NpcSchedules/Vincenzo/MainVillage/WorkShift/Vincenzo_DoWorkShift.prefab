@@ -51,10 +51,7 @@ MonoBehaviour:
   m_actionId: Vincenzo_DoWorkShift
   m_actionAnimState: 
   m_weatherType: -1
-  m_actionTimeRange: {x: 11, y: 17}
-  NextAction: {fileID: -4487910579557379728, guid: 637b56a49351bd2498b80f47d20bc3fb, type: 3}
-  m_haveNextAction: 1
-  m_nextActionDelay: 1
+  m_actionTimeRange: {x: 11, y: 18}
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:

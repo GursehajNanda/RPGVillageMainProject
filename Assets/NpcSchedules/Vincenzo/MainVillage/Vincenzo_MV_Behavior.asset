@@ -13,9 +13,103 @@ MonoBehaviour:
   m_Name: Vincenzo_MV_Behavior
   m_EditorClassIdentifier: 
   m_actionBehaviour:
-  - {fileID: -602152311404901639, guid: 0e00a834c24d16941877175174e26abc, type: 3}
-  - {fileID: 7186065217936458665, guid: a80b8ccc03b959845bb48e1128966cc9, type: 3}
-  - {fileID: -1674994918390463169, guid: e131752c1614f1f429865b4e2513c6fc, type: 3}
-  m_haveActions: 1
-  m_delayBetweenActions: 2
-  m_taskMediator: {fileID: 11400000, guid: 6f1a3d668146c3f46be7031a9dd2cd3b, type: 2}
+  - m_action: {fileID: -602152311404901639, guid: 0e00a834c24d16941877175174e26abc, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_LeaveHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_PickUpEmptyCrates
+  - m_action: {fileID: 7186065217936458665, guid: a80b8ccc03b959845bb48e1128966cc9, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_PickUpEmptyCrates
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToFarmhouse
+  - m_action: {fileID: -7866453520742847723, guid: c2277617f9b9e684ba00d241f9ec259d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToFarmhouse
+        CanProceed: 1
+        ActionStarted: 1
+        IsTaskFinished: 1
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToFarmhouse_BottomVillage
+  - m_action: {fileID: -1674994918390463169, guid: e131752c1614f1f429865b4e2513c6fc, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_DoWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_TalksToNicholas
+  - m_action: {fileID: -4487910579557379728, guid: 637b56a49351bd2498b80f47d20bc3fb, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_TalksToNicholas
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_PickUpEmptyCratesFromShop
+  - m_action: {fileID: -6028780341197642566, guid: 0b17d5e2111def044b1d2350a086d7db, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_PickUpEmptyCratesFromShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_LeaveShop
+  - m_action: {fileID: -1147653237990229026, guid: bce58861d4869064cb5eb2cc8088a1ed, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_LeaveShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToRestaraunt
+  - m_action: {fileID: -7034881014639213440, guid: 865b55447a1221c499dac01907e22d5e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: 65
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_LeaveHome
+  - m_action: {fileID: -2195088315190920437, guid: 17b4adc3ad27f8649bdbf425e7216c69, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_LeaveHome
+  m_sceneMediator: {fileID: 11400000, guid: 70dcac02d314f0648925f839e1dbfebb, type: 2}

@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_requireStartingPoint: 0
   m_startingPosition: {x: -17.651, y: 6.96}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
@@ -53,6 +52,12 @@ MonoBehaviour:
   m_actionAnimState: 
   m_weatherType: -1
   m_actionTimeRange: {x: 10, y: 11}
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: 0, y: -1}
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -64,20 +69,12 @@ MonoBehaviour:
     Down: CarryingWalkDown
     Left: CarryingWalkLeft
     Right: CarryingWalkRight
-  NextAction: {fileID: -5598957580754942063, guid: ea42dadae02386a4ba64b7db94bb0940, type: 3}
-  m_haveNextAction: 1
-  m_nextActionDelay: 1
-  m_actionDialogue:
-    m_dialogues:
-      m_keyValuePairs: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: 0, y: -1}
-  m_teleportOnEnd: 1
   m_usePathfinding: 0
   m_destinationPosition: {x: 0, y: 0}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_teleportOnEnd: 0
   m_teleportationPos: {x: 1.11, y: 4.37}
   m_teleportSortingLayerName: Player
   m_teleportSortingLayerOrder: 0

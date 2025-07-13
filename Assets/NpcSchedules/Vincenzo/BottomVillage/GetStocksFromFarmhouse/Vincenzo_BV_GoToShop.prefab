@@ -44,14 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startingPosition: {x: 1.11, y: 4.37}
+  m_startingPosition: {x: 0.91, y: 4.5}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   m_actionId: Vincenzo_BV_GoToShop
   m_actionAnimState: 
-  m_weatherType: 0
+  m_weatherType: -1
   m_actionTimeRange: {x: 10, y: 11}
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: 0, y: 1}
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -63,22 +69,14 @@ MonoBehaviour:
     Down: CarryingWalkDown
     Left: CarryingWalkLeft
     Right: CarryingWalkRight
-  NextAction: {fileID: 0}
-  m_haveNextAction: 0
-  m_nextActionDelay: 2
-  m_actionDialogue:
-    m_dialogues:
-      m_keyValuePairs: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: 0, y: 1}
-  m_teleportOnEnd: 0
   m_usePathfinding: 1
-  m_destinationPosition: {x: 6.17, y: 6.83}
+  m_destinationPosition: {x: 6.13, y: 7.44}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_teleportOnEnd: 0
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
   m_completeActionOnReactingDestination: 1
-  m_actionToDoWhenReachedDestination: {fileID: 0}
+  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: 495c73bc54a3a0a4ab60a707ab3f6fb5, type: 2}

@@ -52,6 +52,12 @@ MonoBehaviour:
   m_actionAnimState: 
   m_weatherType: -1
   m_actionTimeRange: {x: 8, y: 9}
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: -1, y: 0}
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -63,22 +69,14 @@ MonoBehaviour:
     Down: CarryingWalkDown
     Left: CarryingWalkLeft
     Right: CarryingWalkRight
-  NextAction: {fileID: 0}
-  m_haveNextAction: 0
-  m_nextActionDelay: 2
-  m_actionDialogue:
-    m_dialogues:
-      m_keyValuePairs: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: -1, y: 0}
-  m_teleportOnEnd: 1
   m_usePathfinding: 1
-  m_destinationPosition: {x: 1.01, y: 4.3}
+  m_destinationPosition: {x: 0.87, y: 4.65}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
-  m_teleportationPos: {x: -17.69, y: 5.81}
+  m_teleportOnEnd: 0
+  m_teleportationPos: {x: -19.77, y: 0.981}
   m_teleportSortingLayerName: InteriorPlayer
   m_teleportSortingLayerOrder: 0
   m_completeActionOnReactingDestination: 1
-  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: 495c73bc54a3a0a4ab60a707ab3f6fb5, type: 2}
+  m_actionToDoWhenReachedDestination: {fileID: 0}

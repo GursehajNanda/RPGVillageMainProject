@@ -89,5 +89,5 @@ MonoBehaviour:
         IsActionSkippable: 1
         ActionDays: -1
         ActionScene: VillageBottom
-        NextActionID: Vincenzo_DoWorkShift
+        NextActionID: Vincenzo_GoToShop
   m_sceneMediator: {fileID: 11400000, guid: 70dcac02d314f0648925f839e1dbfebb, type: 2}

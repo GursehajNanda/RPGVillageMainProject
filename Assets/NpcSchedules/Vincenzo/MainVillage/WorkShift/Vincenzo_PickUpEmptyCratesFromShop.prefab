@@ -51,13 +51,14 @@ MonoBehaviour:
   m_actionId: Vincenzo_PickUpEmptyCratesFromShop
   m_actionAnimState: 
   m_weatherType: -1
-  m_actionTimeRange: {x: 18.5, y: 19.5}
+  m_actionTimeRange: {x: 19.5, y: 20.5}
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: 0, y: 1}
+  m_completeActionOnReactingDestination: 1
   m_doesContainIdleAndMovingAnimStates: 0
   m_idleKeyStates:
     Up: 
@@ -74,9 +75,12 @@ MonoBehaviour:
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_reverseSplinePath: 0
   m_teleportOnEnd: 0
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
-  m_completeActionOnReactingDestination: 1
-  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: f02940575af663e49acb884dbc6ca518, type: 2}
+  m_startGameEvents: []
+  m_endGameEvents:
+  - {fileID: 11400000, guid: f02940575af663e49acb884dbc6ca518, type: 2}
+  m_useFollowSpline: 1

@@ -58,6 +58,7 @@ MonoBehaviour:
       m_keyValuePairs: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: -1, y: 0}
+  m_completeActionOnReactingDestination: 1
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -74,9 +75,12 @@ MonoBehaviour:
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_reverseSplinePath: 0
   m_teleportOnEnd: 0
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
-  m_completeActionOnReactingDestination: 1
-  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: 7ec039eb8df047640b6a13713f82d449, type: 2}
+  m_startGameEvents: []
+  m_endGameEvents:
+  - {fileID: 11400000, guid: 7ec039eb8df047640b6a13713f82d449, type: 2}
+  m_useFollowSpline: 1

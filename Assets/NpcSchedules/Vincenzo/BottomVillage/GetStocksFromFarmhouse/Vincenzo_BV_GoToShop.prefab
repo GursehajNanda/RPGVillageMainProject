@@ -44,20 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_haveStartPostion: 1
   m_startingPosition: {x: 0.91, y: 4.5}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   m_actionId: Vincenzo_BV_GoToShop
-  m_actionAnimState: 
   m_weatherType: -1
+  m_isNotWeatherFallBackBehaviour: 1
   m_actionTimeRange: {x: 10, y: 11}
+  m_haveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: 0, y: 1}
+  m_completeActionOnReactingDestination: 1
   m_doesContainIdleAndMovingAnimStates: 1
   m_idleKeyStates:
     Up: CarryingIdleUp
@@ -74,9 +82,12 @@ MonoBehaviour:
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_reverseSplinePath: 0
+  m_loopPath: 0
   m_teleportOnEnd: 0
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
-  m_completeActionOnReactingDestination: 1
-  m_actionToDoWhenReachedDestination: {fileID: 11400000, guid: 495c73bc54a3a0a4ab60a707ab3f6fb5, type: 2}
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_useFollowSpline: 0

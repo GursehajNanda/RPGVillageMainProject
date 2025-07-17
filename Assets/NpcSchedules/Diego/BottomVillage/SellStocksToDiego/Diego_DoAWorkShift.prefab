@@ -44,14 +44,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_haveStartPostion: 1
   m_startingPosition: {x: -22, y: 4}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: -1, y: 0}
   m_actionId: Diego_DoAWorkShift
-  m_actionAnimState: 
   m_weatherType: -1
+  m_isNotWeatherFallBackBehaviour: 1
   m_actionTimeRange: {x: 7, y: 10}
+  m_haveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 1
+  m_moveVectorEndPoint: {x: -1, y: 0}
+  m_completeActionOnReactingDestination: 0
   m_doesContainIdleAndMovingAnimStates: 0
   m_idleKeyStates:
     Up: 
@@ -63,22 +77,17 @@ MonoBehaviour:
     Down: 
     Left: 
     Right: 
-  NextAction: {fileID: 0}
-  m_haveNextAction: 0
-  m_nextActionDelay: 2
-  m_actionDialogue:
-    m_dialogues:
-      m_keyValuePairs: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: -1, y: 0}
-  m_teleportOnEnd: 0
   m_usePathfinding: 0
   m_destinationPosition: {x: 0, y: 0}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
+  m_reverseSplinePath: 0
+  m_loopPath: 0
+  m_teleportOnEnd: 0
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
-  m_completeActionOnReactingDestination: 0
-  m_actionToDoWhenReachedDestination: {fileID: 0}
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_useFollowSpline: 1

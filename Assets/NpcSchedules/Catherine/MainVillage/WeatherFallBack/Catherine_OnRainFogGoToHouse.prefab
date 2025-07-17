@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5834699680825962186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3126505147530892089}
+  - component: {fileID: 8060205054054599700}
+  m_Layer: 0
+  m_Name: Catherine_OnRainFogGoToHouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3126505147530892089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834699680825962186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8060205054054599700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834699680825962186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_haveStartPostion: 0
+  m_startingPosition: {x: 7.397, y: 0.098}
+  m_sortingLayerName: Player
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: -1, y: 0}
+  m_actionId: Catherine_OnRainFogGoToHouse
+  m_weatherType: 20
+  m_isNotWeatherFallBackBehaviour: 0
+  m_actionTimeRange: {x: 0, y: 0}
+  m_haveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_npcMoveSpeed: 2
+  m_moveVectorEndPoint: {x: 0, y: 1}
+  m_doesContainIdleAndMovingAnimStates: 0
+  m_idleKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  m_moveKeyStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  m_usePathfinding: 1
+  m_destinationPosition: {x: 9.24, y: -0.21}
+  m_smothingfactor: 2.5
+  m_distBetweenWayPoints: 0.4
+  m_pathUpdateInterval: 0.5
+  m_reverseSplinePath: 0
+  m_loopPath: 0
+  m_teleportOnEnd: 0
+  m_teleportationPos: {x: 0, y: 0}
+  m_teleportSortingLayerName: 
+  m_teleportSortingLayerOrder: 0
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_useFollowSpline: 0

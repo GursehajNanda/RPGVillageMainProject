@@ -44,14 +44,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_haveStartPostion: 1
   m_startingPosition: {x: 2.4, y: 8.94}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   m_actionId: Vincenzo_GoToRestaraunt
-  m_actionAnimState: 
   m_weatherType: -1
+  m_isNotWeatherFallBackBehaviour: 1
   m_actionTimeRange: {x: 22.5, y: 21.5}
+  m_haveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:

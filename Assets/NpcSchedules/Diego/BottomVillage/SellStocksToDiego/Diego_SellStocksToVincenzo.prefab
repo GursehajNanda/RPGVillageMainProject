@@ -44,28 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_haveStartPostion: 1
   m_startingPosition: {x: -19.3, y: 5.81}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 1, y: 0}
   m_actionId: Diego_SellStocksToVincenzo
-  m_actionAnimState: 
   m_weatherType: -1
+  m_isNotWeatherFallBackBehaviour: 1
   m_actionTimeRange: {x: 7, y: 10}
-  m_doesContainIdleAndMovingAnimStates: 0
-  m_idleKeyStates:
+  m_haveActionState: 0
+  m_actionStates:
     Up: 
     Down: 
     Left: 
     Right: 
-  m_moveKeyStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
-  NextAction: {fileID: 0}
-  m_haveNextAction: 0
-  m_nextActionDelay: 2
+  IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []

@@ -59,6 +59,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        m_timer.Update(Time.deltaTime);
 
         m_currentDay = m_climateData.GetDateTimeYearData().Day;
 
@@ -99,47 +100,52 @@ public class GameController : MonoBehaviour
         }
     }
 
-
     public void ClearWeather()
     {
-        m_climateData.ResetWeatherEffects();
+        m_climateData.RemoveRunningWeather(WeatherType.Cloudy);
+        m_climateData.RemoveRunningWeather(WeatherType.Rainy);
+    }
 
+    public void ResetWeather()
+    {
+        m_climateData.ResetWeatherEffects();
     }
 
     public void AddPartiallyClouds()
     {
-        ClearWeather();
+        ResetWeather();
         m_climateData.ForceWeatherEffects(WeatherType.Cloudy, WeatherBehaviour.Normal);
     }
 
     public void AddClouds()
     {
-        ClearWeather();
+        ResetWeather();
         m_climateData.ForceWeatherEffects(WeatherType.Cloudy, WeatherBehaviour.Heavy);
     }
 
     public void AddRain()
     {
         AddClouds();
+
         m_timer = new Timer(1.0f, 2.0f, null, AddRainDelay);
         m_timer.Start();
     }
 
     public void AddWinds()
     {
-        ClearWeather();
+        ResetWeather();
         m_climateData.ForceWeatherEffects(WeatherType.Windy, WeatherBehaviour.Moderate);
     }
 
     public void AddFog()
     {
-        ClearWeather();
+        ResetWeather();
         m_climateData.ForceWeatherEffects(WeatherType.Foggy, WeatherBehaviour.Heavy);
     }
 
     public void AddThunder()
     {
-        ClearWeather();
+        ResetWeather();
         AddClouds();
         m_timer = new Timer(1.0f, 2.0f, null, AddThunderDelay);
         m_timer.Start();

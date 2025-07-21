@@ -84,7 +84,7 @@ MonoBehaviour:
   m_reverseSplinePath: 1
   m_loopPath: 0
   m_teleportOnEnd: 1
-  m_teleportationPos: {x: 9.204, y: 0.262}
+  m_teleportationPos: {x: 9.24, y: -0.21}
   m_teleportSortingLayerName: Player
   m_teleportSortingLayerOrder: 0
   m_startGameEvents: []

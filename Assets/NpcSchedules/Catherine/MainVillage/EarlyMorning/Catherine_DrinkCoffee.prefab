@@ -50,10 +50,11 @@ MonoBehaviour:
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   m_actionId: Catherine_DrinkCoffee
-  m_weatherType: 41
+  m_weatherType: 43
   m_isNotWeatherFallBackBehaviour: 1
   m_actionTimeRange: {x: 7, y: 11}
-  m_haveActionState: 1
+  IsNotPatrolAction: 1
+  HaveActionState: 0
   m_actionStates:
     Up: EatingUp
     Down: EatingDown
@@ -63,3 +64,5 @@ MonoBehaviour:
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []

@@ -860,7 +860,7 @@ Transform:
   m_GameObject: {fileID: 5771855203847313334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.39, y: 0.39, z: 0.038720574}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -907,7 +907,7 @@ SpriteRenderer:
   m_SortingLayerID: -500924029
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 880949581, guid: 502b115f51fe5564e827ec3465062911, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -915,7 +915,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &3430695867302754573
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 3014866292107009035}
   - component: {fileID: 7641879019376769843}
   m_Layer: 8
-  m_Name: Vincenzo
+  m_Name: NPCExample
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_collidableObjectLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_colRadius: 0.5
   m_collisionCheckDistance: 0.5
   MoveVector: {x: 1, y: 0}
@@ -1100,24 +1100,32 @@ MonoBehaviour:
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: IdleUp
     AnimationFrames:
     - {fileID: -184354940, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: IdleLeft
     AnimationFrames:
     - {fileID: -1643323037, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: IdleRight
     AnimationFrames:
     - {fileID: -1358336149, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: WalkDown
     AnimationFrames:
     - {fileID: 727261609, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
@@ -1126,6 +1134,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: WalkUp
     AnimationFrames:
     - {fileID: -1900333865, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
@@ -1134,6 +1144,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: WalkLeft
     AnimationFrames:
     - {fileID: 1224578763, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
@@ -1142,6 +1154,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: WalkRight
     AnimationFrames:
     - {fileID: 876056834, guid: c74e11ec0602c9742b51d05b3b09a6d7, type: 3}
@@ -1150,30 +1164,40 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingIdleDown
     AnimationFrames:
     - {fileID: -1606814706, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingIdleUp
     AnimationFrames:
     - {fileID: 1383209855, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingIdleLeft
     AnimationFrames:
     - {fileID: -1854515848, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingIdleRight
     AnimationFrames:
     - {fileID: -89599952, guid: 502b115f51fe5564e827ec3465062911, type: 3}
     Loop: 0
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingWalkDown
     AnimationFrames:
     - {fileID: 880949581, guid: 502b115f51fe5564e827ec3465062911, type: 3}
@@ -1182,6 +1206,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingWalkUp
     AnimationFrames:
     - {fileID: -1702783847, guid: 502b115f51fe5564e827ec3465062911, type: 3}
@@ -1190,6 +1216,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingWalkLeft
     AnimationFrames:
     - {fileID: -1766052203, guid: 502b115f51fe5564e827ec3465062911, type: 3}
@@ -1198,6 +1226,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   - AnimationState: CarryingWalkRight
     AnimationFrames:
     - {fileID: -2059076691, guid: 502b115f51fe5564e827ec3465062911, type: 3}
@@ -1206,6 +1236,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   m_spriteRenderer: {fileID: 5848821051769843958}
   m_selectNewActionWaitTime: 2
   m_npcMultiBehavior: {fileID: 0}
@@ -1213,6 +1245,7 @@ MonoBehaviour:
   m_followSplinePathWithActionKey:
     m_keyValuePairs: []
   m_sceneMediator: {fileID: 0}
+  m_weatherFallBackMediator: {fileID: 0}
 --- !u!50 &8865456152013539785
 Rigidbody2D:
   serializedVersion: 4
@@ -1458,6 +1491,8 @@ MonoBehaviour:
     Loop: 1
     FrameSpeed: 1
     AnimationEvents: 0
+    HoldFrameIndex: -1
+    HoldDuration: 0
   m_spriteRenderer: {fileID: 5995938663068217590}
   m_playerLayer:
     serializedVersion: 2

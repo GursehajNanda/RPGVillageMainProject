@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Thomas_MV_Behaviour
+  m_EditorClassIdentifier: 
+  m_actionBehaviour:
+  - m_action: {fileID: 6118027662756316296, guid: bd8850cf41ae36844a993759505a3d39, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_MV_Behaviour
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_MV_Behaviour
+    m_canLoopTask: 0
+    m_loopTaskIndex: 0
+    m_loopTaskMaxGameTime: 0
+  m_sceneMediator: {fileID: 11400000, guid: 4824ec8bbef4fbc40b8c3d456039a9ff, type: 2}

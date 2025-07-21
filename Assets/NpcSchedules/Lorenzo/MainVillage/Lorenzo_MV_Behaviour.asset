@@ -1,0 +1,184 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Lorenzo_MV_Behaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: -45016441650244667, guid: 89088b1dd5f65454281ebcc4ba242411, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_NightStayAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_ExitRoom
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 22, y: 5}
+  - m_action: {fileID: -6683254933650210555, guid: 6b9fdf1a1bad1194f9a95f67a7cc335f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_ExitRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_GoToJeanne
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5, y: 5.5}
+  - m_action: {fileID: -1063147579866995036, guid: ade775f0c304c5c4cb8d3c810e30909f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_GoToJeanne
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_TalkToJeanne
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5.5, y: 6}
+  - m_action: {fileID: 2890572214419769635, guid: 10448c8853070c942b08dac87eb0bbeb, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_TalkToJeanne
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_ExitMotel
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 6, y: 6.5}
+  - m_action: {fileID: -7253569251938772696, guid: 2ffd235865b970a459429c5e87940f0c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_ExitMotel
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_SweepingPatrol
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 6.5, y: 7}
+  - m_action: {fileID: -9075972042426816745, guid: 30efc1dfd6335584ba3847a59c366b00, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_SweepingPatrol
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorezno_GoToMotel
+    m_weatherType: 59
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 7, y: 10}
+  - m_action: {fileID: -3727950632257468243, guid: 0a4c5b33b1557e24c8c0c28f74735d05, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorezno_GoToMotel
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_EnterMotel
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10, y: 10.5}
+  - m_action: {fileID: 3620471833737960170, guid: 961cd1bc9f2480c409c8bd50601780f9, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_EnterMotel
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_MotelWorkShift
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10.5, y: 11}
+  - m_action: {fileID: -5455444550240640504, guid: 501f1c6adcfc64b49b50a08ace134bcc, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_MotelWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_ShiftOverTalkToJeanne
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 11, y: 20}
+  - m_action: {fileID: 961318315538178822, guid: 3e66e8cde5701fd4dbacb3d12a437f3a, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_ShiftOverTalkToJeanne
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_GoUpstairs
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 20, y: 21}
+  - m_action: {fileID: -2214716199892693922, guid: d054929c5d7e21040b620ae81b648f1f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_GoUpstairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_EnterRoom
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 21, y: 21.5}
+  - m_action: {fileID: -4971322308405541161, guid: e7a294beb894b7540aeea194d7dc929e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_EnterRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_NightStayAtHome
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 21.5, y: 22}
+  m_sceneMediator: {fileID: 11400000, guid: 7007bd9680bc50a4cad943beb234816b, type: 2}

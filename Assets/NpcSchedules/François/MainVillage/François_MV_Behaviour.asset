@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: "Fran\xE7ois_MV_Behaviour"
+  m_EditorClassIdentifier: 
+  m_actionBehaviour:
+  - m_action: {fileID: 4352359328773952141, guid: d80ed4b253e575c499319fddffb2e07d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_CookingVegetables"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: "Fran\xE7ois_CookingVegetables"
+    m_canLoopTask: 0
+    m_loopTaskIndex: 0
+    m_loopTaskMaxGameTime: 0
+  m_sceneMediator: {fileID: 11400000, guid: 344b6cce8c454944b84e2505c86105d0, type: 2}

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4147117129659057925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6773384399535315992}
+  - component: {fileID: 961318315538178822}
+  m_Layer: 0
+  m_Name: Lorenzo_ShiftOverTalkToJeanne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6773384399535315992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147117129659057925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &961318315538178822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147117129659057925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_haveStartPostion: 1
+  m_startingPosition: {x: -8, y: 11}
+  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: 1}
+  m_actionId: DialogueAction
+  IsNotPatrolAction: 1
+  HaveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_dialogueTypeActionID: JeanneLorenzoShiftOver
+  m_actionDialogues:
+  - m_dialogues: {fileID: 11400000, guid: 97b0375605bd63d419dbc7971a9dd94c, type: 2}
+    m_dialogueTurn: 1
+  m_npcFaceDirection: {x: 0, y: 1}
+  m_isEntryPointForConversation: 1
+  m_NumOfInteractingNPCS: 2
+  m_requirePlayerToStarConversation: 0
+  m_waitTimeInMinsToStarConversation: 0

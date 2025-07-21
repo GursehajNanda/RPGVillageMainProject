@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Jane_MV_Behaviour
+  m_EditorClassIdentifier: 
+  m_actionBehaviour:
+  - m_action: {fileID: 1510817438467959555, guid: 3f70188a68146924193d0f6f09371b71, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jane_HoldingBaby
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Jane_HoldingBaby
+    m_canLoopTask: 0
+    m_loopTaskIndex: 0
+    m_loopTaskMaxGameTime: 0
+  m_sceneMediator: {fileID: 11400000, guid: def861165af5a1f4385e37603a5d91a5, type: 2}

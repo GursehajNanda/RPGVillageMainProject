@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9497a67968c734d4bae88fcef81bed4c, type: 3}
   m_Name: Jeanne_TalkToJane2
   m_EditorClassIdentifier: 
-  m_dialogueID: Jeanne_TalkToJeanne2
+  m_dialogueID: Jeanne_TalkToJane2
   m_dialogue:
   - That little guy is growing up good.
   - It always amaze me how you manage your house work.

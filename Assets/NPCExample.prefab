@@ -1050,7 +1050,6 @@ GameObject:
   - component: {fileID: 1707654320730351132}
   - component: {fileID: 8865456152013539785}
   - component: {fileID: 3014866292107009035}
-  - component: {fileID: 7641879019376769843}
   m_Layer: 8
   m_Name: NPCExample
   m_TagString: Untagged
@@ -1241,11 +1240,9 @@ MonoBehaviour:
   m_spriteRenderer: {fileID: 5848821051769843958}
   m_selectNewActionWaitTime: 2
   m_npcMultiBehavior: {fileID: 0}
-  m_npcWeatherFallbackBehaviors: []
   m_followSplinePathWithActionKey:
     m_keyValuePairs: []
   m_sceneMediator: {fileID: 0}
-  m_weatherFallBackMediator: {fileID: 0}
 --- !u!50 &8865456152013539785
 Rigidbody2D:
   serializedVersion: 4
@@ -1301,34 +1298,6 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &7641879019376769843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7264659143808169666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d0c18b23a863d489ed24276e3942ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GameEvent: {fileID: 11400000, guid: 495c73bc54a3a0a4ab60a707ab3f6fb5, type: 2}
-  ResponseComponent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7264659143808169666}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &7702960639741082720
 GameObject:
   m_ObjectHideFlags: 0

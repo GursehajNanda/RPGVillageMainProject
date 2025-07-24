@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &79190530301137245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6248741798416378497}
+  - component: {fileID: 6277864695211690006}
+  m_Layer: 0
+  m_Name: Vincenzo_TalkToJaneNight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6248741798416378497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79190530301137245}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6277864695211690006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79190530301137245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_actionId: Vincenzo_TalkToJaneNight
+  m_haveStartPostion: 1
+  m_startingPosition: {x: -0.03, y: 14.97}
+  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: -1, y: 0}
+  IsNotPatrolAction: 1
+  HaveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_dialogueTypeActionID: JaneVinzenzoNightTalk
+  m_actionDialogues:
+  - m_dialogues: {fileID: 11400000, guid: b3837f2d558463941aa77aed20204bcd, type: 2}
+    m_dialogueTurn: 1
+  m_npcFaceDirection: {x: -1, y: 0}
+  m_isEntryPointForConversation: 0
+  m_NumOfInteractingNPCS: 0
+  m_requirePlayerToStarConversation: 0
+  m_waitTimeInMinsToStarConversation: 0
+  m_endConversationWaitPeriod: 15

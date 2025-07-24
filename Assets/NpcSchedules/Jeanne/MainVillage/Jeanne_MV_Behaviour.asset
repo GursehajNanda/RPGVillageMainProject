@@ -27,6 +27,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 22, y: 4}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 3358887575665335784, guid: c811df644d06d8244be5421d518c1304, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -41,6 +43,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 4, y: 5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: -416211855411248380, guid: 18d6b7a2f1e90ef4e8f9125cddd3e14d, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -55,6 +59,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 5, y: 6.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5921365749947250018, guid: 9b3d26b91eb11084ebbeac38b0e731ee, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -69,6 +75,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 6.5, y: 11}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 6185918072578452797, guid: 99d913a56dd0a6f4c99f0a82e0959451, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -83,6 +91,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 11, y: 11.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: -402484335192614878, guid: 43260f01ec312814da4630ae9435fd90, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -97,6 +107,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 11.5, y: 12}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 8
   - m_action: {fileID: -3481567501029793663, guid: 9d5476cda4534d44ca4c37e84c201aaf, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -108,9 +120,11 @@ MonoBehaviour:
         ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jeanne_TalkToJane
-    m_weatherType: -1
+    m_weatherType: 43
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 12, y: 13}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 8
   - m_action: {fileID: 1691393164355328160, guid: 57f938cfae0972e49a7cf69e56da51fc, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -122,9 +136,11 @@ MonoBehaviour:
         ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jeanne_GoToMotelFromOverWorld
-    m_weatherType: -1
+    m_weatherType: 43
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 13, y: 14}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 8
   - m_action: {fileID: 7396658765465416094, guid: ca4ec30d9af4a264a94d5c73fa137adf, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -139,6 +155,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14, y: 14.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: -3911869899314210834, guid: 5ca92a1202547ed4b883d4e4782b5486, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -153,6 +171,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14.5, y: 15}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5921365749947250018, guid: 9b3d26b91eb11084ebbeac38b0e731ee, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -167,6 +187,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 15, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 6182106753873227279, guid: 78d1bf18de9a4324da41b7714d6c2a77, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -181,6 +203,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 20, y: 21}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5921365749947250018, guid: 9b3d26b91eb11084ebbeac38b0e731ee, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -195,6 +219,8 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 21, y: 21.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: -8940574810672153550, guid: ca26633eaeb84b84aa99ba62c7aac59f, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -209,4 +235,6 @@ MonoBehaviour:
     m_weatherType: -1
     m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 21.5, y: 22}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: d51bec8d0d0a546439e4cd049a245721, type: 2}

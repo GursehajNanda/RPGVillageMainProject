@@ -12,19 +12,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Thomas_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
-  - m_action: {fileID: 6118027662756316296, guid: bd8850cf41ae36844a993759505a3d39, type: 3}
+  m_actionTask:
+  - m_action: {fileID: -4496289510549675332, guid: dd7bec5ce0ec04a4c94e1bda72e6a684, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: Thomas_MV_Behaviour
+        ActionID: Thomas_Rest
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
         ActionDays: -1
         ActionScene: MainVillage
-        NextActionID: Thomas_MV_Behaviour
-    m_canLoopTask: 0
-    m_loopTaskIndex: 0
-    m_loopTaskMaxGameTime: 0
+        NextActionID: Thomas_GoDownStairsFromRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 21, y: 5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8130161037716529112, guid: 9b8ed2d3a536c0c4398c7fa5cb19379e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_GoDownStairsFromRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_DownstairsToExitMotel
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4161111191936113173, guid: 43cbf8b08cb7b164cba15bdfc6b45716, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_DownstairsToExitMotel
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_GoToPlayMusic
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.5, y: 6}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -27630247090629874, guid: e256362eed5dbe646867f069f4e50cbe, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_GoToPlayMusic
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_PlayMusic
+    m_weatherType: 43
+    m_actionTimeRange: {x: 6, y: 7}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 5
+  - m_action: {fileID: 6118027662756316296, guid: bd8850cf41ae36844a993759505a3d39, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_PlayMusic
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_GoToMotel
+    m_weatherType: 43
+    m_actionTimeRange: {x: 7, y: 19}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 5
+  - m_action: {fileID: 9034662608663782848, guid: 63223888acf17d24c80ea615eae9d3f4, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_GoToMotel
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_ExitMotelToUpstairs
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 5
+  - m_action: {fileID: -8721866152183360230, guid: 20e997a4c68808e4b92ce1ca32fac700, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_ExitMotelToUpstairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_GoToRoomFromDownstairs
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20, y: 20.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 5
+  - m_action: {fileID: 4869029926026942640, guid: 531f0651acde14a4db5922bbb8742f82, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Thomas_GoToRoomFromDownstairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Thomas_Rest
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20.5, y: 21}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 5
   m_sceneMediator: {fileID: 11400000, guid: 4824ec8bbef4fbc40b8c3d456039a9ff, type: 2}

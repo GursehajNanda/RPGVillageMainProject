@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8929506209691739566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8407676645680996787}
+  - component: {fileID: -2944622088422802076}
+  m_Layer: 0
+  m_Name: Catherine_TalkToJaneAndMargaret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8407676645680996787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8929506209691739566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2944622088422802076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8929506209691739566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_actionId: Catherine_TalkToJaneAndMargaret
+  m_haveStartPostion: 1
+  m_startingPosition: {x: 9.92, y: -0.173}
+  m_sortingLayerName: Player
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: -1}
+  IsNotPatrolAction: 1
+  HaveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_dialogueTypeActionID: JaneMargaretCatherineEveningTalk
+  m_actionDialogues:
+  - m_dialogues: {fileID: 11400000, guid: c8e260a1a8d10834d93e73eb0b9baa9b, type: 2}
+    m_dialogueTurn: 2
+  - m_dialogues: {fileID: 11400000, guid: 914b85a9f3ba7f3438df7300b1230815, type: 2}
+    m_dialogueTurn: 6
+  - m_dialogues: {fileID: 11400000, guid: f18e827a25f15ce43857eeea338ec592, type: 2}
+    m_dialogueTurn: 8
+  - m_dialogues: {fileID: 11400000, guid: 0e66b81e41fe88a4683d3c5c2cf8dd03, type: 2}
+    m_dialogueTurn: 11
+  - m_dialogues: {fileID: 11400000, guid: 07116a0badc93de44bea439595e8f3f2, type: 2}
+    m_dialogueTurn: 13
+  - m_dialogues: {fileID: 11400000, guid: f2a5a81e2a60538449a9495fae6a36eb, type: 2}
+    m_dialogueTurn: 15
+  m_npcFaceDirection: {x: 0, y: -1}
+  m_isEntryPointForConversation: 0
+  m_NumOfInteractingNPCS: 0
+  m_requirePlayerToStarConversation: 0
+  m_waitTimeInMinsToStarConversation: 0
+  m_endConversationWaitPeriod: 15

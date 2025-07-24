@@ -44,16 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d1e373abe9d964aa99b7186e3ab1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: Leonardo_ManagerRestaraunt
   m_haveStartPostion: 1
   m_startingPosition: {x: 11.255, y: -14.086}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
-  m_actionId: Leonardo_ManagerRestaraunt
-  m_weatherType: -1
-  m_isNotWeatherFallBackBehaviour: 1
-  m_actionTimeRange: {x: 7, y: 11}
-  m_haveActionState: 1
+  IsNotPatrolAction: 1
+  HaveActionState: 1
   m_actionStates:
     Up: ManagingRestaraunt
     Down: ManagingRestaraunt

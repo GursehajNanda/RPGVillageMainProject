@@ -12,7 +12,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Catherine_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
+  m_actionTask:
+  - m_action: {fileID: 268018813259517985, guid: 59d0fdfbbbf065c4d911c1d916dca076, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_StayInHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_ExitHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 22, y: 5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7029460288967923104, guid: 0ea864b689a5e87498d10b4e198844da, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_ExitHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_GoToDrinkCoffee
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -207153464778503463, guid: b967ffb909012a54b8047fde2011252f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_GoToDrinkCoffee
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_DrinkCoffee
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5.5, y: 6}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: -2783449641084182709, guid: 999b2d6bdd0edd84b830f8d1e932dc29, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -23,5 +71,170 @@ MonoBehaviour:
         IsActionSkippable: 0
         ActionDays: -1
         ActionScene: MainVillage
-        NextActionID: Catherine_DrinkCoffee
+        NextActionID: Catherine_GoMeetMargaret
+    m_weatherType: 43
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 6, y: 8}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 6
+  - m_action: {fileID: -6119176426351673253, guid: 1fc0fd71c8f559a4b899bfd5050fa0c4, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_GoMeetMargaret
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_TalkToMargaret
+    m_weatherType: 43
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 8, y: 8.5}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 6
+  - m_action: {fileID: -7962949697042303456, guid: 49817ea6ca10da043869aa3c5a398244, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_TalkToMargaret
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_GoToHouse
+    m_weatherType: 43
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 8.5, y: 9.5}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 6
+  - m_action: {fileID: 1556824224272121863, guid: c6287cbcd70d9e547bbc9bef7c99be49, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_GoToHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_EnterHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 9.5, y: 10}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4906292474783677475, guid: dbec4b1216e26e64ca0b63d74542f10d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_EnterHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_StayInHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10, y: 11}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 268018813259517985, guid: 59d0fdfbbbf065c4d911c1d916dca076, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_StayInHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_ExitHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10, y: 17}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7029460288967923104, guid: 0ea864b689a5e87498d10b4e198844da, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_ExitHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_GoMeetMargaret
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 17, y: 17.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -6119176426351673253, guid: 1fc0fd71c8f559a4b899bfd5050fa0c4, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_GoMeetMargaret
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_TalkToJaneAndMargaret
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 17.5, y: 18}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 12
+  - m_action: {fileID: -2944622088422802076, guid: 7e148b72e9e6af546a075ec29a5c8a3c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_TalkToJaneAndMargaret
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_GoToHouse
+    m_weatherType: 43
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 18, y: 19}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 12
+  - m_action: {fileID: 1556824224272121863, guid: c6287cbcd70d9e547bbc9bef7c99be49, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_GoToHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_EnterHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 19, y: 19.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4906292474783677475, guid: dbec4b1216e26e64ca0b63d74542f10d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Catherine_EnterHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Catherine_StayInHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 21.5, y: 22}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: d68dce9ccacf66649b841f6cddf0ac2d, type: 2}

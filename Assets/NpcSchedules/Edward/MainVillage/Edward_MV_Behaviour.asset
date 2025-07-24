@@ -12,5 +12,357 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Edward_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionTask: []
+  m_actionTask:
+  - m_action: {fileID: 6197950982033076514, guid: 683a38e9321db404d868577da5479e94, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_ExitRoom
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 21, y: 4}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -444090792427356661, guid: f8910e1fd63b35f40a147968cc157553, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ExitRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 4, y: 4.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 476948263192600387, guid: e6564eda9b896b94f88dba04e1b5a3bd, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 4.5, y: 5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToForge
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -3335479688352135872, guid: 755950acffcc1f24e841cf6d855b226c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToForge
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_ForgeWeapon
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 5.5, y: 6}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3131885753162453283, guid: 341d3ca65a838c8419f292bd7df003dd, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ForgeWeapon
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToWorshopRestFromForge
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 6, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7164857294753373879, guid: 9f553bab1edc37a468c71283b93e611d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToWorshopRestFromForge
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToCollingAir
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 7.5, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -6167970879853814579, guid: f4102f3d959fd90448136f1095d56179, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToCollingAir
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_CollingWeaponAir
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 8.5, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7202223696275596926, guid: d7b57d7d132d1dc48949b32494c3ecf4, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_CollingWeaponAir
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToWorkshopRestFromCA
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 9, y: 10}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 1521485705521450863, guid: 4745bacdbae41574caeff26f58b52dd6, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToWorkshopRestFromCA
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10, y: 10.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_ForgeWeaponForged
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 10.5, y: 11.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3131885753162453283, guid: ea38b3c2483546645a05cc547e4b32d8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ForgeWeaponForged
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToCWFromForge
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 11.5, y: 12}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5829315517158245145, guid: 027c593f883a4914eab15c30e94bc64f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToCWFromForge
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_CollingWeaponWater
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 12, y: 12.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4986288562057356795, guid: b60d0c0df3eb0284f95f0844ca8eada6, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_CollingWeaponWater
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToFinishWeapon
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 12.5, y: 13}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5404774725803447645, guid: 898aae8bc3630ef4888e0170049bc5d5, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToFinishWeapon
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_HardeningWeapon
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 13, y: 13.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6226339064324708412, guid: dc84a3badc9e9594fa3b2d94af09727c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_HardeningWeapon
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_ForgePolishingWeapon
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 13.5, y: 14.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -2674356674140722913, guid: 21dc3643a3d444449b2031fec360c3dd, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ForgePolishingWeapon
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoForgeFinishToWorkshopRest
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 14.5, y: 16.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1860318393531205274, guid: 5ca1df195b2f0274a910e67580614b86, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoForgeFinishToWorkshopRest
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 16.5, y: 17.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_LeaveWorkShop
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 17.5, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 1677629838117426833, guid: 47b8ba7ad7d50ba4ebb0ef16b51b9a83, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_LeaveWorkShop
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_EnterRoom
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 20, y: 20.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -444090792427356661, guid: b48c678b958ea714fa9f1ad3b1ad18e7, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_EnterRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtHouse
+    m_weatherType: -1
+    m_isNotWeatherFallBackBehaviour: 1
+    m_actionTimeRange: {x: 20.5, y: 21}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: ae1e016656a638d4ab8d8d0cffd7d66d, type: 2}

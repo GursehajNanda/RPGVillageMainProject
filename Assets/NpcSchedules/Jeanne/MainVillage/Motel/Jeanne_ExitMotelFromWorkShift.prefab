@@ -83,8 +83,8 @@ MonoBehaviour:
   m_pathUpdateInterval: 0.5
   m_reverseSplinePath: 0
   m_loopPath: 0
-  m_teleportOnEnd: 0
-  m_teleportationPos: {x: 0, y: 0}
-  m_teleportSortingLayerName: 
+  m_teleportOnEnd: 1
+  m_teleportationPos: {x: -3, y: 7.56}
+  m_teleportSortingLayerName: Player
   m_teleportSortingLayerOrder: 0
   m_useFollowSpline: 1

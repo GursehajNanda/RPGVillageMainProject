@@ -12,7 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: "Fran\xE7ois_MV_Behaviour"
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
+  m_actionTask:
+  - m_action: {fileID: -8595896926396293367, guid: 7b69ae1a780143e4caae6501c14e1600, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_RestAtRoom"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_GoToKitchen"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 22, y: 5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4197110335138383047, guid: aed80c6ac14cb584eb564c464b850ea5, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_GoToKitchen"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_CookingVegetables"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   - m_action: {fileID: 4352359328773952141, guid: d80ed4b253e575c499319fddffb2e07d, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -22,9 +52,25 @@ MonoBehaviour:
         IsTaskFinished: 0
         IsActionSkippable: 0
         ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: "Fran\xE7ois_CookingVegetables"
-    m_canLoopTask: 0
-    m_loopTaskIndex: 0
-    m_loopTaskMaxGameTime: 0
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_GoToRoomFromKitchen"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.5, y: 21.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1159348527540506012, guid: 18ba251d1d80bbc49b86bf88a7b30869, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_GoToRoomFromKitchen"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_RestAtRoom"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 21.5, y: 22}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: 344b6cce8c454944b84e2505c86105d0, type: 2}

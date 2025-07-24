@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Jame_BV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
+  m_actionTask:
   - m_action: {fileID: 3189048163507356552, guid: bd260996f32a56146bc5a0811a5c8359, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -24,7 +24,8 @@ MonoBehaviour:
         ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: James_DoWorkShift
-    m_canLoopTask: 0
-    m_loopTaskIndex: 0
-    m_loopTaskMaxGameTime: 0
+    m_weatherType: -1
+    m_actionTimeRange: {x: 0, y: 23}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: 799f9ade439df984abc1c27e89117efd, type: 2}

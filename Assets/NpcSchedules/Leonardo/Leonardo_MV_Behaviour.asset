@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Leonardo_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
+  m_actionTask:
   - m_action: {fileID: -5304066917348533082, guid: 63d871e5f73325b49927bcb28a54bc7e, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: ManagingRestaraunt
+        ActionID: Leonardo_ManagerRestaraunt
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
+        ActionDays: 0
         ActionScene: MainVillage
-        NextActionID: ManagingRestaraunt
-    m_canLoopTask: 0
-    m_loopTaskIndex: 0
-    m_loopTaskMaxGameTime: 0
+        NextActionID: Leonardo_ManagerRestaraunt
+    m_weatherType: 0
+    m_actionTimeRange: {x: 0, y: 23}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: 794c5560c6e55ea48a19f02e50bfe1a7, type: 2}

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4452471474812868025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8572536106038356500}
+  - component: {fileID: 5875618658990330301}
+  m_Layer: 0
+  m_Name: Margaret_Clean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8572536106038356500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452471474812868025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5875618658990330301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4452471474812868025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff040ef01b1aa4e46934af76bd9e6c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_actionId: Margaret_Clean
+  m_haveStartPostion: 1
+  m_startingPosition: {x: 14.42, y: 0.05}
+  m_sortingLayerName: Player
+  m_sortingLayerOrder: 0
+  m_initialMoveVec: {x: 0, y: -1}
+  IsNotPatrolAction: 0
+  HaveActionState: 0
+  m_actionStates:
+    Up: 
+    Down: 
+    Left: 
+    Right: 
+  IsNotDilaogueAction: 0
+  m_actionDialogue:
+    m_dialogues:
+      m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []
+  m_patrolPoints:
+  - m_wayPoint: {x: 14.42, y: 0.05}
+    m_haveActionAnimStates: 1
+    m_animActionStates:
+      Up: Sweeping
+      Down: Sweeping
+      Left: Sweeping
+      Right: Sweeping
+  - m_wayPoint: {x: 14.42, y: -0.9}
+    m_haveActionAnimStates: 1
+    m_animActionStates:
+      Up: Sweeping
+      Down: Sweeping
+      Left: Sweeping
+      Right: Sweeping
+  - m_wayPoint: {x: 13.05, y: -0.33}
+    m_haveActionAnimStates: 1
+    m_animActionStates:
+      Up: Sweeping
+      Down: Sweeping
+      Left: Sweeping
+      Right: Sweeping
+  - m_wayPoint: {x: 11.99, y: -0.71}
+    m_haveActionAnimStates: 1
+    m_animActionStates:
+      Up: Sweeping
+      Down: Sweeping
+      Left: Sweeping
+      Right: Sweeping
+  m_patrolSpeed: 2
+  m_stopDistance: 0.1
+  m_waitTime: 2

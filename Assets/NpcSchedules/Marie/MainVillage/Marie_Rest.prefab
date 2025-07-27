@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3848169726650147702
+--- !u!1 &1339659534044568218
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9136932596617361067}
-  - component: {fileID: 1951722169344485093}
+  - component: {fileID: 5158184312913010660}
+  - component: {fileID: 2074419423649487819}
   m_Layer: 0
-  m_Name: Diego_SellStocksToVincenzo
+  m_Name: Marie_Rest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9136932596617361067
+--- !u!4 &5158184312913010660
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3848169726650147702}
+  m_GameObject: {fileID: 1339659534044568218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,28 +32,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1951722169344485093
+--- !u!114 &2074419423649487819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3848169726650147702}
+  m_GameObject: {fileID: 1339659534044568218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d1e373abe9d964aa99b7186e3ab1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: Marie_Rest
   m_haveStartPostion: 1
-  m_startingPosition: {x: -19.3, y: 5.81}
+  m_startingPosition: {x: -4.976, y: -16.275}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 1, y: 0}
-  m_actionId: Diego_SellStocksToVincenzo
-  m_weatherType: -1
-  m_isNotWeatherFallBackBehaviour: 1
-  m_actionTimeRange: {x: 7, y: 10}
-  m_haveActionState: 0
+  IsNotPatrolAction: 1
+  HaveActionState: 0
   m_actionStates:
     Up: 
     Down: 
@@ -63,14 +61,5 @@ MonoBehaviour:
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
-  m_dialogueTypeActionID: ShopExchangeBetweenVincenzoAndDiego
-  m_actionDialogues:
-  - m_dialogues: {fileID: 11400000, guid: 378b795ee3fd71e4a95c9f899d3c124d, type: 2}
-    m_dialogueTurn: 2
-  - m_dialogues: {fileID: 11400000, guid: 4c27c5f4318a5d346ba2898986c8392f, type: 2}
-    m_dialogueTurn: 4
-  m_npcFaceDirection: {x: 1, y: 0}
-  m_isEntryPointForConversation: 0
-  m_NumOfInteractingNPCS: 0
-  m_requirePlayerToStarConversation: 0
-  m_waitTimeInMinsToStarConversation: 0
+  m_startGameEvents: []
+  m_endGameEvents: []

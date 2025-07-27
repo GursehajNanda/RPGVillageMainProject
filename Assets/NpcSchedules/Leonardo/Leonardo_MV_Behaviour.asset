@@ -21,11 +21,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: 0
         ActionScene: MainVillage
         NextActionID: Leonardo_ManagerRestaraunt
-    m_weatherType: 0
+    m_weatherType: -1
     m_actionTimeRange: {x: 0, y: 23}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: -1
   m_sceneMediator: {fileID: 11400000, guid: 794c5560c6e55ea48a19f02e50bfe1a7, type: 2}

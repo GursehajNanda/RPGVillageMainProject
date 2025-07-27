@@ -21,11 +21,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_GoDownstairsFroomRoom
     m_weatherType: -1
-    m_actionTimeRange: {x: 20, y: 5}
+    m_actionTimeRange: {x: 20, y: 5.25}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -3671064997259846957, guid: 15cb65ba87af82a4c8e70dbd97912be7, type: 3}
@@ -36,11 +35,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_LeaveMotelDownStairs
     m_weatherType: -1
-    m_actionTimeRange: {x: 5, y: 5.5}
+    m_actionTimeRange: {x: 5.25, y: 5.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -34993518196111923, guid: 9f2c12beb038a1348bd834e8f5266e55, type: 3}
@@ -51,7 +49,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_GoToPlayMusic
     m_weatherType: -1
@@ -66,7 +63,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_PlayMusic
     m_weatherType: 43
@@ -81,7 +77,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_GoToMotel
     m_weatherType: 43
@@ -96,7 +91,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_GoUpstairsFromDowstairs
     m_weatherType: -1
@@ -111,7 +105,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_GoToRoomUpstairs
     m_weatherType: -1
@@ -126,11 +119,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: John_MotelRest
     m_weatherType: -1
     m_actionTimeRange: {x: 19.5, y: 20}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: fb5ea28f4b0edd149b8b220d0636e487, type: 2}

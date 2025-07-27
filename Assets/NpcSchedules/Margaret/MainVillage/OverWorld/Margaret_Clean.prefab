@@ -92,6 +92,6 @@ MonoBehaviour:
       Down: Sweeping
       Left: Sweeping
       Right: Sweeping
-  m_patrolSpeed: 2
+  m_patrolSpeed: 1
   m_stopDistance: 0.1
-  m_waitTime: 2
+  m_waitTime: 6

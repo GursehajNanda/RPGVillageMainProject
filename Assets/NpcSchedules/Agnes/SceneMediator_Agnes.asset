@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c533b9ddaa2f03459782cbb2a6ea94b, type: 3}
   m_Name: SceneMediator_Agnes
   m_EditorClassIdentifier: 
-  m_npcActiveInScene:
-    m_keyValuePairs:
-    - m_key: MainVillage
-      m_value: 0
-    - m_key: VillageBottom
-      m_value: 0
-  m_npcBehaviours:
-  - {fileID: 11400000, guid: 7adf46dc3e396d84cb470bba43c36702, type: 2}
+  m_npcDataInScene:
+  - m_npcBehaviour: {fileID: 11400000, guid: 7adf46dc3e396d84cb470bba43c36702, type: 2}
+    m_activeScene: MainVillage
+    IsActive: 0
+  - m_npcBehaviour: {fileID: 11400000, guid: df9b07d892e1e9142af2eecab01fa3ef, type: 2}
+    m_activeScene: VillageBottom
+    IsActive: 0

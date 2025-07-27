@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogueID: Jane_TalkToCatherineAndMargaret5
   m_dialogue:
-  - You, know he is doing extra hardwork after charles is born.
+  - You know him,  he is doing extra hardwork after charles is born.
   - He wants to give him a proper education when he grows up.
   m_responses: []

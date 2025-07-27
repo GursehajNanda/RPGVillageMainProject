@@ -21,11 +21,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToCharlesFromRest
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 22, y: 5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -37,11 +35,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_TalkToVincenzoMorning
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 5, y: 5.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -53,11 +49,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_HoldingBaby
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 5.5, y: 6.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -69,11 +63,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_RestAtCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 6.5, y: 10}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -85,11 +77,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_ExitHouseFromCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 10, y: 12.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -101,11 +91,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToJeanne
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 12.5, y: 12.75}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -117,11 +105,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_TalkToJeanne
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 12.75, y: 13}
     m_isOutDoorAction: 1
     m_weatherFailsActionIndex: 8
@@ -133,11 +119,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToHome
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 13, y: 14}
     m_isOutDoorAction: 1
     m_weatherFailsActionIndex: 8
@@ -149,11 +133,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_EnterHouseToCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14, y: 14.25}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -165,11 +147,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_HoldingBaby
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14.25, y: 14.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -181,11 +161,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_RestAtCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14.5, y: 16}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -197,11 +175,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToMeetCatherineAndMargaret
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 16.5, y: 17}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -213,11 +189,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_TalkToCatherineAndMargaret
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 17, y: 18}
     m_isOutDoorAction: 1
     m_weatherFailsActionIndex: 14
@@ -229,11 +203,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToHome
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 18, y: 19}
     m_isOutDoorAction: 1
     m_weatherFailsActionIndex: 14
@@ -245,11 +217,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_EnterHouseToCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 19, y: 20}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -261,11 +231,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_HoldingBaby
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 20, y: 20.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -277,11 +245,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_TalkToVincenzoNight
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 20.5, y: 21}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -293,11 +259,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_GoToRestFromCharles
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 21, y: 22}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -309,12 +273,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Jane_RestAtHouse
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 22, y: 22.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: def861165af5a1f4385e37603a5d91a5, type: 2}

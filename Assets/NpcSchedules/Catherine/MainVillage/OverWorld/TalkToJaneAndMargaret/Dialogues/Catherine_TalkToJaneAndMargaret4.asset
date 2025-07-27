@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogueID: Catherine_TalkToJaneAndMargaret4
   m_dialogue:
-  - Yeah, your husband and my husband is similar.
-  - Even though they are firends, during the work stuff they don't like to talk about
-    anything else other then the work.
+  - Yeah, vincenzo is really hardworking. Even Nicholas is like that.
+  - Even though they are firends, during the work stuff they don't like to talk to
+    each other.
+  - They just talk about work.
   m_responses: []

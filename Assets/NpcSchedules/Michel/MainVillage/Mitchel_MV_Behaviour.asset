@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Mitchel_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
+  m_actionTask:
   - m_action: {fileID: -5950086989484978326, guid: ce1e919f1155ac342be8693184ed2cf3, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -21,10 +21,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Mirchel_WaitingForDish
-    m_canLoopTask: 0
-    m_loopTaskIndex: 0
-    m_loopTaskMaxGameTime: 0
+    m_weatherType: -1
+    m_actionTimeRange: {x: 0, y: 23}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: 6de7d0d07359377459d766a3fad4f61c, type: 2}

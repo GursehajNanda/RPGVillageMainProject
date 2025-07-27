@@ -12,12 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c533b9ddaa2f03459782cbb2a6ea94b, type: 3}
   m_Name: SceneMediator_Peter
   m_EditorClassIdentifier: 
-  m_npcActiveInScene:
-    m_keyValuePairs:
-    - m_key: MainVillage
-      m_value: 0
-    - m_key: VillageBottom
-      m_value: 0
-  m_npcBehaviours:
-  - {fileID: 11400000, guid: 16211466c13dfb7418099de42c1d863e, type: 2}
-  - {fileID: 11400000, guid: 9b3fa14e8c9fc154a95f0574fba98a06, type: 2}
+  m_npcDataInScene:
+  - m_npcBehaviour: {fileID: 11400000, guid: 16211466c13dfb7418099de42c1d863e, type: 2}
+    m_activeScene: MainVillage
+    IsActive: 0
+  - m_npcBehaviour: {fileID: 11400000, guid: 9b3fa14e8c9fc154a95f0574fba98a06, type: 2}
+    m_activeScene: VillageBottom
+    IsActive: 0

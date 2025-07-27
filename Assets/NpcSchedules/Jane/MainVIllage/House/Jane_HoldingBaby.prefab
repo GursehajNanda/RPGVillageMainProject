@@ -63,5 +63,4 @@ MonoBehaviour:
       m_keyValuePairs: []
   m_startGameEvents:
   - {fileID: 11400000, guid: cbc4124c670a93646bcc353cc20929a4, type: 2}
-  m_endGameEvents:
-  - {fileID: 11400000, guid: ac21e08e52bb6cc448a8d13dae0bf486, type: 2}
+  m_endGameEvents: []

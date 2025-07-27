@@ -42,10 +42,13 @@ public class GameController : MonoBehaviour
     {
         m_climateData = ClimateData.Instance;  
     }
+
     private void Start()
     {
         m_startingSpeeed = 1;
         m_previousDay = m_currentDay;
+        m_climateData.SetMonth(Month.June);
+        OnDayChanged();
         ClearWeather();
     }
 
@@ -67,13 +70,7 @@ public class GameController : MonoBehaviour
         if (m_previousDay != m_currentDay)
         {
             m_previousDay = m_currentDay;
-
-          
-            if (GameDayToWeekday.TryGetValue(m_currentDay, out int weekdayIndex))
-            {
-                m_weekDaysDropDown.SetValueWithoutNotify(weekdayIndex);
-                m_weekDaysDropDown.RefreshShownValue();
-            }
+            OnDayChanged();
         }
 
         UpateTime();
@@ -93,6 +90,15 @@ public class GameController : MonoBehaviour
         }
     }
 
+    private void OnDayChanged()
+    {
+        if (GameDayToWeekday.TryGetValue(m_currentDay, out int weekdayIndex))
+        {
+            m_weekDaysDropDown.SetValueWithoutNotify(weekdayIndex);
+            m_weekDaysDropDown.RefreshShownValue();
+        }
+
+    }
     private void OnDropdownChanged(int selectedIndex)
     {
         if (WeekdayToGameDay.TryGetValue(selectedIndex, out int newDay))

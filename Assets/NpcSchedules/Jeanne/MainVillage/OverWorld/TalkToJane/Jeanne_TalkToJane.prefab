@@ -78,3 +78,4 @@ MonoBehaviour:
   m_NumOfInteractingNPCS: 2
   m_requirePlayerToStarConversation: 0
   m_waitTimeInMinsToStarConversation: 0
+  m_endConversationWaitPeriod: 60

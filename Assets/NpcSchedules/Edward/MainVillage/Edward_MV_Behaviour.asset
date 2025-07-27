@@ -21,11 +21,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_ExitRoom
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 21, y: 4}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -37,11 +35,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 4, y: 4.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -53,11 +49,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_RestAtWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 4.5, y: 5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -69,11 +63,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToForge
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 5, y: 5.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -85,11 +77,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_ForgeWeapon
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 5.5, y: 6}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -101,12 +91,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToWorshopRestFromForge
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
-    m_actionTimeRange: {x: 6, y: 7}
+    m_actionTimeRange: {x: 6, y: 6.15}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -7164857294753373879, guid: 9f553bab1edc37a468c71283b93e611d, type: 3}
@@ -117,12 +105,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_RestAtWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
-    m_actionTimeRange: {x: 7, y: 7.5}
+    m_actionTimeRange: {x: 6.15, y: 7}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
@@ -133,12 +119,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToCollingAir
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
-    m_actionTimeRange: {x: 7.5, y: 8.5}
+    m_actionTimeRange: {x: 7, y: 8}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -6167970879853814579, guid: f4102f3d959fd90448136f1095d56179, type: 3}
@@ -149,12 +133,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_CollingWeaponAir
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
-    m_actionTimeRange: {x: 8.5, y: 9}
+    m_actionTimeRange: {x: 8, y: 9}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 7202223696275596926, guid: d7b57d7d132d1dc48949b32494c3ecf4, type: 3}
@@ -165,11 +147,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToWorkshopRestFromCA
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 9, y: 10}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -181,11 +161,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_RestAtWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 10, y: 10.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -197,11 +175,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_ForgeWeaponForged
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 10.5, y: 11.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -213,11 +189,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToCWFromForge
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 11.5, y: 12}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -229,11 +203,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_CollingWeaponWater
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 12, y: 12.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -245,11 +217,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoToFinishWeapon
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 12.5, y: 13}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -261,11 +231,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_HardeningWeapon
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 13, y: 13.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -277,11 +245,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_ForgePolishingWeapon
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 13.5, y: 14.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -293,11 +259,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_GoForgeFinishToWorkshopRest
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 14.5, y: 16.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -309,11 +273,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_RestAtWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 16.5, y: 17.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -325,11 +287,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_LeaveWorkShop
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 17.5, y: 20}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -341,11 +301,9 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_EnterRoom
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 20, y: 20.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
@@ -357,12 +315,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: MainVillage
         NextActionID: Edward_RestAtHouse
     m_weatherType: -1
-    m_isNotWeatherFallBackBehaviour: 1
     m_actionTimeRange: {x: 20.5, y: 21}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 126
   m_sceneMediator: {fileID: 11400000, guid: ae1e016656a638d4ab8d8d0cffd7d66d, type: 2}

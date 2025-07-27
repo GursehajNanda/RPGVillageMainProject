@@ -12,5 +12,125 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Agne_BV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionTask: []
+  m_actionTask:
+  - m_action: {fileID: 5097315918793591399, guid: 32832a0aea9b65746a1f2d0762064c25, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: GoToSchool
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: GoToClassRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3815640593841701613, guid: 56b4c5b83c90dbc489f03eb91b827c61, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: GoToClassRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Agnes_GoToClassRoomChair
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8828878545413829843, guid: 4cf5624d44f661140bd864abdf5880a1, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Agnes_GoToClassRoomChair
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Agnes_ClassStarted
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8.5, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5248342296727642599, guid: 2a95200dcd0274d478e253dfa6337f0c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Agnes_ClassStarted
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Agnes_RestAtClassRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9, y: 10}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7322156634165670803, guid: 60cfcda9a0789d645a21f9b1dd2c66a4, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Agnes_RestAtClassRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Agnes_LeaveClassRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10, y: 17}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5912183778271442797, guid: f0b3086b2a77fc24c8de0841522aaf3f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Agnes_LeaveClassRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: LeaveSchool
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17, y: 17.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -6693194526723909565, guid: 8de9da989ae2ff440b84c59aba18d515, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: LeaveSchool
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: GoToHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.5, y: 18}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7190309280780359097, guid: 9fa6a4f0bbf78c749835032c16389523, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: GoToHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionDays: -1
+        ActionScene: VillageBottom
+        NextActionID: Agnes_MV_GoHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18, y: 19}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
   m_sceneMediator: {fileID: 11400000, guid: 0f3fa3a8bacf2e848a59e07553b43cae, type: 2}

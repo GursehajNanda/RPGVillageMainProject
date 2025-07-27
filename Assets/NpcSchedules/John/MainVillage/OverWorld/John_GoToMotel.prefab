@@ -47,7 +47,7 @@ MonoBehaviour:
   m_actionId: John_GoToMotel
   m_haveStartPostion: 0
   m_startingPosition: {x: 0, y: 0}
-  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 0}
   IsNotPatrolAction: 1

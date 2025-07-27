@@ -49,7 +49,7 @@ MonoBehaviour:
   m_startingPosition: {x: -4.651, y: -16.58}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
-  m_initialMoveVec: {x: 0, y: -1}
+  m_initialMoveVec: {x: 0, y: 23}
   IsNotPatrolAction: 1
   HaveActionState: 1
   m_actionStates:

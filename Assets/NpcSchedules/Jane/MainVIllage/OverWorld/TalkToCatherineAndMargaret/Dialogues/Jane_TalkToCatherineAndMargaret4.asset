@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogueID: Jane_TalkToCatherineAndMargaret4
   m_dialogue:
-  - Anyway, how is your husbands?
+  - Anyway, how are your husbands?
   m_responses: []

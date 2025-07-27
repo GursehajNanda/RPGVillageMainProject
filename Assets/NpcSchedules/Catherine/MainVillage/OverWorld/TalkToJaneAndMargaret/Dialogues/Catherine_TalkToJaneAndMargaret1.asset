@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogueID: Catherine_TalkToJaneAndMargaret1
   m_dialogue:
-  - I am doing  good, how was your day?
+  - I am doing good, how was your day?
   m_responses: []

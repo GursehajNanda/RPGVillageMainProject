@@ -12,5 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Marie_MV_Behaviour
   m_EditorClassIdentifier: 
-  m_actionTask: []
+  m_actionTask:
+  - m_action: {fileID: 2074419423649487819, guid: 25d9094d82a9a06419f64ef9c83d404d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Marie_Rest
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Marie_Rest
+    m_weatherType: -1
+    m_actionTimeRange: {x: 0, y: 23}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: e52a31518200b0146a099cabcd8be1e6, type: 2}

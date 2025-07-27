@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Jeanne_DoWorkShift
   m_haveStartPostion: 1
-  m_startingPosition: {x: -8.978, y: 12.166}
+  m_startingPosition: {x: -8.96, y: 12.152}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

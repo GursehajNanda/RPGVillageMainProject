@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c3d4c90cd706843aea63056675c4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: Jeanne_TalkToLorenzoEarlyShift
   m_haveStartPostion: 1
   m_startingPosition: {x: -8.967, y: 12.155}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
-  m_actionId: Jeanne_TalkToLorenzoEarlyShift
   IsNotPatrolAction: 1
   HaveActionState: 0
   m_actionStates:
@@ -72,3 +72,4 @@ MonoBehaviour:
   m_NumOfInteractingNPCS: 0
   m_requirePlayerToStarConversation: 0
   m_waitTimeInMinsToStarConversation: 0
+  m_endConversationWaitPeriod: 60

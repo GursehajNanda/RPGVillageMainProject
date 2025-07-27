@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Thomas_PlayMusic
   m_haveStartPostion: 1
-  m_startingPosition: {x: 4.5, y: -0.892}
+  m_startingPosition: {x: -2.663, y: -3.234}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

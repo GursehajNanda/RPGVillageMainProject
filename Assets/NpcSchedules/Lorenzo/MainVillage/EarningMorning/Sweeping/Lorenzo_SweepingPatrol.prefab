@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff040ef01b1aa4e46934af76bd9e6c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: Lorenzo_SweepingPatrol
   m_haveStartPostion: 1
-  m_startingPosition: {x: -4.527, y: 7.3}
+  m_startingPosition: {x: -3.07, y: 7.56}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
-  m_actionId: Lorenzo_SweepingPatrol
   IsNotPatrolAction: 0
   HaveActionState: 0
   m_actionStates:
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_startGameEvents: []
   m_endGameEvents: []
   m_patrolPoints:
-  - m_wayPoint: {x: -3.03, y: 7.51}
+  - m_wayPoint: {x: -3.07, y: 7.56}
     m_haveActionAnimStates: 1
     m_animActionStates:
       Up: Sweeping

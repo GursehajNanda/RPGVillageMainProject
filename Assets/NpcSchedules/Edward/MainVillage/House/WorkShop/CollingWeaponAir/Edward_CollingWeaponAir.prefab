@@ -62,4 +62,5 @@ MonoBehaviour:
     m_dialogues:
       m_keyValuePairs: []
   m_startGameEvents: []
-  m_endGameEvents: []
+  m_endGameEvents:
+  - {fileID: 11400000, guid: 5f8172a7c75db2948a6735eac2cce7ca, type: 2}

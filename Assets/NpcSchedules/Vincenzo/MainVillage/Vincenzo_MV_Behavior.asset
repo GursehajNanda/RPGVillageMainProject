@@ -12,205 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
   m_Name: Vincenzo_MV_Behavior
   m_EditorClassIdentifier: 
-  m_actionBehaviour:
-  - m_action: {fileID: -602152311404901639, guid: 0e00a834c24d16941877175174e26abc, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_LeaveHome
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_PickUpEmptyCrates
-  - m_action: {fileID: 7186065217936458665, guid: a80b8ccc03b959845bb48e1128966cc9, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_PickUpEmptyCrates
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_GoToFarmhouse
-  - m_action: {fileID: -7866453520742847723, guid: c2277617f9b9e684ba00d241f9ec259d, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToFarmhouse
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_GoToFarmhouse_BottomVillage
-  - m_action: {fileID: -1674994918390463169, guid: e131752c1614f1f429865b4e2513c6fc, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToShop
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_LeaveStocksFromFarmhouse
-  - m_action: {fileID: -4900423933324273616, guid: 20e064451b4076f4c8c7a3e83c435474, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_LeaveStocksFromFarmhouse
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_GoToWorkShift
-  - m_action: {fileID: -2769462775724426180, guid: 133936986f3816e48ad93d7180b435a1, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToWorkShift
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_DoWorkShift
-  - m_action: {fileID: -4053368407233836093, guid: 2a49f7f02a8b4f74987cde96e245da89, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_DoWorkShift
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 0
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_TalksToNicholas
-  - m_action: {fileID: -4487910579557379728, guid: 637b56a49351bd2498b80f47d20bc3fb, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_TalksToNicholas
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_PickUpEmptyCratesFromShop
-  - m_action: {fileID: -6028780341197642566, guid: 0b17d5e2111def044b1d2350a086d7db, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_PickUpEmptyCratesFromShop
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_LeaveShop
-  - m_action: {fileID: -1147653237990229026, guid: bce58861d4869064cb5eb2cc8088a1ed, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_LeaveShop
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_LeaveEmptyCrateAtHome
-  - m_action: {fileID: 9125641329150293758, guid: c5ba8f2802248f3448bffc5a394f67ba, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_LeaveEmptyCrateAtHome
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_GoToRestaraunt
-  - m_action: {fileID: -7034881014639213440, guid: 865b55447a1221c499dac01907e22d5e, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToRestaraunt
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: 65
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_EnterRestaraunt
-  - m_action: {fileID: -3609673433932661109, guid: cf75b8b4bf9af564bb4ca0558ca3c7fd, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_EnterRestaraunt
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: 65
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_StayAtRestaraunt
-  - m_action: {fileID: -7073183915590153419, guid: 225e962ac3f781944b67130b2829a6bf, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_StayAtRestaraunt
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 0
-        ActionDays: 65
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_ExitRestaraunt
-  - m_action: {fileID: -7156806148884074880, guid: ef947dfb2b03ac24b9b075134a13c95f, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_ExitRestaraunt
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: 65
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_GoToHouseFromRestaraunt
-  - m_action: {fileID: -1015131164829322498, guid: 323f4369d5710df4687ef201b5143012, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToHouseFromRestaraunt
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: 65
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_EnterHome
-  - m_action: {fileID: 5620509542400544137, guid: ee93a1d06467aa04fbb2a5b7f0fe8bbb, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_GoToHouseFromShop
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: 62
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_EnterHome
-  - m_action: {fileID: 1044944299124813666, guid: e9acc4736a09b5e499d788d25b76c8ac, type: 3}
-    m_taksMediator:
-      m_npcStates:
-        ActionID: Vincenzo_EnterHome
-        CanProceed: 0
-        ActionStarted: 0
-        IsTaskFinished: 0
-        IsActionSkippable: 1
-        ActionDays: -1
-        ActionScene: MainVillage
-        NextActionID: Vincenzo_StayAtHome
+  m_actionTask:
   - m_action: {fileID: 8699804205548541802, guid: 90eb3bb294f15ec40a2de3628438071c, type: 3}
     m_taksMediator:
       m_npcStates:
@@ -219,7 +21,67 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_TalkToJaneMorning
+    m_weatherType: -1
+    m_actionTimeRange: {x: 22, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8807433799568307484, guid: 24a733e8e15acec46bfc77a19ae4a623, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_TalkToJaneMorning
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
         ActionScene: MainVillage
         NextActionID: Vincenzo_LeaveHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.5, y: 6.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -602152311404901639, guid: 0e00a834c24d16941877175174e26abc, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_LeaveHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_PickUpEmptyCrates
+    m_weatherType: -1
+    m_actionTimeRange: {x: 6.5, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7186065217936458665, guid: a80b8ccc03b959845bb48e1128966cc9, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_PickUpEmptyCrates
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToFarmhouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7866453520742847723, guid: c2277617f9b9e684ba00d241f9ec259d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToFarmhouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToFarmhouse_BottomVillage
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: 70dcac02d314f0648925f839e1dbfebb, type: 2}

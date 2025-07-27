@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3475067915873446960
+--- !u!1 &2219494608289698482
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4539599256358164378}
-  - component: {fileID: 8723482047807049198}
+  - component: {fileID: 5754413649001997574}
+  - component: {fileID: -3732397571174245723}
   m_Layer: 0
-  m_Name: Jane_GoToJeanne
+  m_Name: Diego_Rest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4539599256358164378
+--- !u!4 &5754413649001997574
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475067915873446960}
+  m_GameObject: {fileID: 2219494608289698482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,22 +32,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8723482047807049198
+--- !u!114 &-3732397571174245723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475067915873446960}
+  m_GameObject: {fileID: 2219494608289698482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d1e373abe9d964aa99b7186e3ab1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_actionId: Jane_GoToJeanne
+  m_actionId: Diego_Rest
   m_haveStartPostion: 1
-  m_startingPosition: {x: -0.475, y: 7.55}
-  m_sortingLayerName: Player
+  m_startingPosition: {x: -20.022, y: 7.17}
+  m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   IsNotPatrolAction: 1
@@ -63,28 +63,3 @@ MonoBehaviour:
       m_keyValuePairs: []
   m_startGameEvents: []
   m_endGameEvents: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: -1, y: 0}
-  m_doesContainIdleAndMovingAnimStates: 0
-  m_idleKeyStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
-  m_moveKeyStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
-  m_usePathfinding: 1
-  m_destinationPosition: {x: -0.47, y: 6.3}
-  m_smothingfactor: 2.5
-  m_distBetweenWayPoints: 0.4
-  m_pathUpdateInterval: 0.5
-  m_reverseSplinePath: 0
-  m_loopPath: 0
-  m_teleportOnEnd: 0
-  m_teleportationPos: {x: 0, y: 0}
-  m_teleportSortingLayerName: 
-  m_teleportSortingLayerOrder: 0
-  m_useFollowSpline: 0

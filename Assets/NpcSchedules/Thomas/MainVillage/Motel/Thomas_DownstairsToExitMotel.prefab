@@ -47,7 +47,7 @@ MonoBehaviour:
   m_actionId: Thomas_DownstairsToExitMotel
   m_haveStartPostion: 1
   m_startingPosition: {x: -8.319, y: 9.77}
-  m_sortingLayerName: InteiorPlayer
+  m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: -1, y: 0}
   IsNotPatrolAction: 1

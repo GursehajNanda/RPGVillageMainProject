@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Nicholas_Rest
   m_haveStartPostion: 1
-  m_startingPosition: {x: 25.05, y: -6.095}
+  m_startingPosition: {x: 25.05, y: -6.22}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

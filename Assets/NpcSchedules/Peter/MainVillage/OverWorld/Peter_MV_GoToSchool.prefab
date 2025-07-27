@@ -47,7 +47,7 @@ MonoBehaviour:
   m_actionId: Peter_MV_GoToSchool
   m_haveStartPostion: 1
   m_startingPosition: {x: 9.25, y: 0.4}
-  m_sortingLayerName: InteriorPlayer
+  m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   IsNotPatrolAction: 1
@@ -62,9 +62,8 @@ MonoBehaviour:
     m_dialogues:
       m_keyValuePairs: []
   m_startGameEvents: []
-  m_endGameEvents:
-  - {fileID: 11400000, guid: f1965b8bc8e68154eb39601594d37d12, type: 2}
-  m_npcMoveSpeed: 1
+  m_endGameEvents: []
+  m_npcMoveSpeed: 4
   m_moveVectorEndPoint: {x: 0, y: -1}
   m_doesContainIdleAndMovingAnimStates: 0
   m_idleKeyStates:

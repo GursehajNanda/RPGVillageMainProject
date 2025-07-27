@@ -9,12 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c533b9ddaa2f03459782cbb2a6ea94b, type: 3}
-  m_Name: SceneMediator_Lorenzo_WF
+  m_Script: {fileID: 11500000, guid: 9497a67968c734d4bae88fcef81bed4c, type: 3}
+  m_Name: Katharina_Attendacne4
   m_EditorClassIdentifier: 
-  m_npcActiveInScene:
-    m_keyValuePairs:
-    - m_key: MainVillage
-      m_value: 0
-  m_npcBehaviours:
-  - {fileID: 11400000, guid: 4920f118766981b429cf0deab093ea08, type: 2}
+  m_dialogueID: Katharina_Attendacne4
+  m_dialogue:
+  - Peter
+  m_responses: []

@@ -21,7 +21,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katharina_GoToClasseoom
     m_weatherType: -1
@@ -36,22 +35,20 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
-        NextActionID: Katherina_Rest
+        NextActionID: Katharina_ClassRest
     m_weatherType: -1
     m_actionTimeRange: {x: 7, y: 7.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
-  - m_action: {fileID: 1154843909866787122, guid: 33ecf1f77c3c1494db09a1c8634e905d, type: 3}
+  - m_action: {fileID: 8770438101087757075, guid: d743e3bbb9ed9d34fbc8a09e4481cc80, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: Katherina_Rest
+        ActionID: Katharina_ClassRest
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katharina_ClassStarted
     m_weatherType: -1
@@ -66,7 +63,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katharina_Teaching
     m_weatherType: -1
@@ -81,7 +77,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katherina_ClassEnd
     m_weatherType: -1
@@ -96,7 +91,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katherina_GoToRoom
     m_weatherType: -1
@@ -111,11 +105,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Katherina_Rest
     m_weatherType: -1
     m_actionTimeRange: {x: 17, y: 18}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: d1da01ed89c57694996f8c85c18a6515, type: 2}

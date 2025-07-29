@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7623937016985769717}
-  - component: {fileID: 873853202892622619}
+  - component: {fileID: -287857568651506809}
   m_Layer: 0
   m_Name: Diego_DoAWorkShift
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &873853202892622619
+--- !u!114 &-287857568651506809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,19 +41,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 8015051875390394113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d1e373abe9d964aa99b7186e3ab1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: Diego_DoAWorkShift
   m_haveStartPostion: 1
-  m_startingPosition: {x: -22, y: 4}
+  m_startingPosition: {x: -20.022, y: 7.17}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
-  m_initialMoveVec: {x: -1, y: 0}
-  m_actionId: Diego_DoAWorkShift
-  m_weatherType: -1
-  m_isNotWeatherFallBackBehaviour: 1
-  m_actionTimeRange: {x: 7, y: 10}
-  m_haveActionState: 0
+  m_initialMoveVec: {x: 0, y: -1}
+  IsNotPatrolAction: 1
+  HaveActionState: 0
   m_actionStates:
     Up: 
     Down: 
@@ -63,31 +61,5 @@ MonoBehaviour:
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
-  m_npcMoveSpeed: 1
-  m_moveVectorEndPoint: {x: -1, y: 0}
-  m_completeActionOnReactingDestination: 0
-  m_doesContainIdleAndMovingAnimStates: 0
-  m_idleKeyStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
-  m_moveKeyStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
-  m_usePathfinding: 0
-  m_destinationPosition: {x: 0, y: 0}
-  m_smothingfactor: 2.5
-  m_distBetweenWayPoints: 0.4
-  m_pathUpdateInterval: 0.5
-  m_reverseSplinePath: 0
-  m_loopPath: 0
-  m_teleportOnEnd: 0
-  m_teleportationPos: {x: 0, y: 0}
-  m_teleportSortingLayerName: 
-  m_teleportSortingLayerOrder: 0
   m_startGameEvents: []
   m_endGameEvents: []
-  m_useFollowSpline: 1

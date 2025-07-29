@@ -16,31 +16,29 @@ MonoBehaviour:
   - m_action: {fileID: 5097315918793591399, guid: 32832a0aea9b65746a1f2d0762064c25, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: GoToSchool
+        ActionID: GoToSchool_Agnes
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
-        NextActionID: GoToClassRoom
+        NextActionID: GoToClassRoom_Agnes
     m_weatherType: -1
-    m_actionTimeRange: {x: 7, y: 8}
+    m_actionTimeRange: {x: 7.1, y: 8.1}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 3815640593841701613, guid: 56b4c5b83c90dbc489f03eb91b827c61, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: GoToClassRoom
+        ActionID: GoToClassRoom_Agnes
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Agnes_GoToClassRoomChair
     m_weatherType: -1
-    m_actionTimeRange: {x: 8, y: 8.5}
+    m_actionTimeRange: {x: 8.1, y: 8.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -8828878545413829843, guid: 4cf5624d44f661140bd864abdf5880a1, type: 3}
@@ -51,7 +49,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Agnes_ClassStarted
     m_weatherType: -1
@@ -66,7 +63,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Agnes_RestAtClassRoom
     m_weatherType: -1
@@ -81,11 +77,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Agnes_LeaveClassRoom
     m_weatherType: -1
-    m_actionTimeRange: {x: 10, y: 17}
+    m_actionTimeRange: {x: 10, y: 17.2}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5912183778271442797, guid: f0b3086b2a77fc24c8de0841522aaf3f, type: 3}
@@ -96,41 +91,39 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
-        NextActionID: LeaveSchool
+        NextActionID: LeaveSchool_Agnes
     m_weatherType: -1
-    m_actionTimeRange: {x: 17, y: 17.5}
+    m_actionTimeRange: {x: 17.2, y: 17.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
-  - m_action: {fileID: -6693194526723909565, guid: 8de9da989ae2ff440b84c59aba18d515, type: 3}
+  - m_action: {fileID: -6693194526723909565, guid: eaa7b2a3ce7a64542afcbaf327994519, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: LeaveSchool
+        ActionID: LeaveSchool_Agnes
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
-        NextActionID: GoToHome
+        NextActionID: GoToHome_Agnes
     m_weatherType: -1
     m_actionTimeRange: {x: 17.5, y: 18}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
-  - m_action: {fileID: -7190309280780359097, guid: 9fa6a4f0bbf78c749835032c16389523, type: 3}
+  - m_action: {fileID: -7190309280780359097, guid: 10c0d3e6db039cd49b5220df7926a171, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: GoToHome
+        ActionID: GoToHome_Agnes
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Agnes_MV_GoHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 18, y: 19}
+    m_actionTimeRange: {x: 18, y: 18.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: 0f3fa3a8bacf2e848a59e07553b43cae, type: 2}

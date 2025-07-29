@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Diego_GoToWorkShift
   m_haveStartPostion: 1
-  m_startingPosition: {x: -25.58, y: 4.27}
+  m_startingPosition: {x: -19.374, y: 11.869}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
@@ -63,7 +63,7 @@ MonoBehaviour:
       m_keyValuePairs: []
   m_startGameEvents: []
   m_endGameEvents: []
-  m_npcMoveSpeed: 1
+  m_npcMoveSpeed: 4
   m_moveVectorEndPoint: {x: 0, y: -1}
   m_doesContainIdleAndMovingAnimStates: 0
   m_idleKeyStates:

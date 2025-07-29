@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Diego_EnterFarmhouseTOWorkshift
   m_haveStartPostion: 1
-  m_startingPosition: {x: -25.69, y: -6.73}
+  m_startingPosition: {x: -19.49, y: 0.83}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 1}

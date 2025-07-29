@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Katherina_Rest
   m_haveStartPostion: 1
-  m_startingPosition: {x: 46.42, y: 5.423}
+  m_startingPosition: {x: 46.406, y: 5.458}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 1}

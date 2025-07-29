@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Katharina_Teaching
   m_haveStartPostion: 1
-  m_startingPosition: {x: -17.69, y: 2.879}
+  m_startingPosition: {x: 34.409, y: 2.873}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

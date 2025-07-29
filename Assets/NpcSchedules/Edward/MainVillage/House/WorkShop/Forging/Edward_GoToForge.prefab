@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Edward_GoToForge
   m_haveStartPostion: 1
-  m_startingPosition: {x: 23.964, y: 0.05}
+  m_startingPosition: {x: 24.087, y: -0.103}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: -1, y: 0}

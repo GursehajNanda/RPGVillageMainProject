@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Cesare_RestAtRoom
   m_haveStartPostion: 1
-  m_startingPosition: {x: 34.38, y: -2.04}
+  m_startingPosition: {x: 40.602, y: 5.518}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 1}

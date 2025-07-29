@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Diego_RestAtStable
   m_haveStartPostion: 1
-  m_startingPosition: {x: -41.48, y: -4.26}
+  m_startingPosition: {x: -35.27, y: 3.3}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

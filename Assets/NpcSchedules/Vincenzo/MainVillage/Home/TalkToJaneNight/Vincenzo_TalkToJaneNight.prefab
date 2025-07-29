@@ -66,10 +66,10 @@ MonoBehaviour:
   m_dialogueTypeActionID: JaneVinzenzoNightTalk
   m_actionDialogues:
   - m_dialogues: {fileID: 11400000, guid: b3837f2d558463941aa77aed20204bcd, type: 2}
-    m_dialogueTurn: 1
+    m_dialogueTurn: 2
   m_npcFaceDirection: {x: -1, y: 0}
   m_isEntryPointForConversation: 0
   m_NumOfInteractingNPCS: 0
+  m_endConversationWaitPeriod: 15
   m_requirePlayerToStarConversation: 0
   m_waitTimeInMinsToStarConversation: 0
-  m_endConversationWaitPeriod: 15

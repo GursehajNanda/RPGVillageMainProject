@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9497a67968c734d4bae88fcef81bed4c, type: 3}
   m_Name: Cesare_ClassAttendance
   m_EditorClassIdentifier: 
-  m_dialogueID: Cesare_Attendance
+  m_dialogueID: Cesare_ClassAttendance
   m_dialogue:
   - Present
   m_responses: []

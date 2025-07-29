@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &493757418707743064
+--- !u!1 &1499724637001316642
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 849723650641517085}
-  - component: {fileID: 5620509542400544137}
+  - component: {fileID: 2671967185854983968}
+  - component: {fileID: 5097315918793591399}
   m_Layer: 0
-  m_Name: Vincenzo_GoToHouseFromShop
+  m_Name: GoToSchool_Agnes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &849723650641517085
+--- !u!4 &2671967185854983968
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493757418707743064}
+  m_GameObject: {fileID: 1499724637001316642}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,28 +32,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5620509542400544137
+--- !u!114 &5097315918793591399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493757418707743064}
+  m_GameObject: {fileID: 1499724637001316642}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f1c8cb2c799daf408adc148ea99de48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_actionId: GoToSchool_Agnes
   m_haveStartPostion: 1
-  m_startingPosition: {x: 2.4, y: 8.94}
+  m_startingPosition: {x: 6.893, y: 7.529}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
-  m_actionId: Vincenzo_GoToHouseFromShop
-  m_weatherType: -1
-  m_isNotWeatherFallBackBehaviour: 1
-  m_actionTimeRange: {x: 22.5, y: 23}
-  m_haveActionState: 0
+  IsNotPatrolAction: 1
+  HaveActionState: 0
   m_actionStates:
     Up: 
     Down: 
@@ -63,9 +61,10 @@ MonoBehaviour:
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
+  m_startGameEvents: []
+  m_endGameEvents: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: 0, y: 1}
-  m_completeActionOnReactingDestination: 1
   m_doesContainIdleAndMovingAnimStates: 0
   m_idleKeyStates:
     Up: 
@@ -78,7 +77,7 @@ MonoBehaviour:
     Left: 
     Right: 
   m_usePathfinding: 1
-  m_destinationPosition: {x: -0.46, y: 6.43}
+  m_destinationPosition: {x: 12.3, y: 4.28}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5
@@ -88,6 +87,4 @@ MonoBehaviour:
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
-  m_startGameEvents: []
-  m_endGameEvents: []
   m_useFollowSpline: 0

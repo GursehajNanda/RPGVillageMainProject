@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 655182570826563870}
   - component: {fileID: -6693194526723909565}
   m_Layer: 0
-  m_Name: LeaveSchool
+  m_Name: LeaveSchool_Agnes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

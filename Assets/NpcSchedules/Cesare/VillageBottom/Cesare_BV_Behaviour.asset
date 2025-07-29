@@ -21,7 +21,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_GoToClassRoom
     m_weatherType: -1
@@ -36,7 +35,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_GoToClassroomChair
     m_weatherType: -1
@@ -51,7 +49,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 1
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_ClassStarted
     m_weatherType: -1
@@ -66,7 +63,6 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_RestAtClassroom
     m_weatherType: -1
@@ -81,11 +77,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_LeaveClassroom
     m_weatherType: -1
-    m_actionTimeRange: {x: 10, y: 17}
+    m_actionTimeRange: {x: 10, y: 17.1}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 4928818795547839649, guid: 20d0fc6ea39ec6341a728b357ceb9a9c, type: 3}
@@ -96,11 +91,10 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_GoToRoom
     m_weatherType: -1
-    m_actionTimeRange: {x: 17, y: 17.5}
+    m_actionTimeRange: {x: 17.1, y: 17.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 6142416756242091324, guid: 1c3b39313b816c3468c934a1349b0b31, type: 3}
@@ -111,11 +105,11 @@ MonoBehaviour:
         ActionStarted: 0
         IsTaskFinished: 0
         IsActionSkippable: 0
-        ActionDays: -1
         ActionScene: VillageBottom
         NextActionID: Cesare_RestAtRoom
     m_weatherType: -1
     m_actionTimeRange: {x: 17.5, y: 18}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
+  ActionDays: 62
   m_sceneMediator: {fileID: 11400000, guid: 2a5dfc8f37d1dfc4dac20eb75382b7ed, type: 2}

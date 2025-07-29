@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Cesare_ClassStarted
   m_haveStartPostion: 1
-  m_startingPosition: {x: 35.33, y: 1.013}
+  m_startingPosition: {x: 35.34, y: 1.014}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 1}
@@ -70,6 +70,6 @@ MonoBehaviour:
   m_npcFaceDirection: {x: 0, y: 1}
   m_isEntryPointForConversation: 1
   m_NumOfInteractingNPCS: 4
+  m_endConversationWaitPeriod: 60
   m_requirePlayerToStarConversation: 0
   m_waitTimeInMinsToStarConversation: 0
-  m_endConversationWaitPeriod: 60

@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Agnes_MV_GoHome
   m_haveStartPostion: 1
-  m_startingPosition: {x: 4.11, y: -9.99}
-  m_sortingLayerName: InteriorPlayer
+  m_startingPosition: {x: 2.96, y: -9.83}
+  m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: 1}
   IsNotPatrolAction: 1
@@ -77,7 +77,7 @@ MonoBehaviour:
     Left: 
     Right: 
   m_usePathfinding: 1
-  m_destinationPosition: {x: 14.416, y: 0.148}
+  m_destinationPosition: {x: 14.42, y: -0.01}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5

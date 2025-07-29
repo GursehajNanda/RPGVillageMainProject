@@ -24,7 +24,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Peter_LeaveHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 21, y: 5}
+    m_actionTimeRange: {x: 20.5, y: 5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 6109924202001680145, guid: dcc0751099b1f6348826857e03c71a01, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Peter_EnterHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 19, y: 20}
+    m_actionTimeRange: {x: 18.5, y: 19.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5262212345664414530, guid: ff97d43e4f8118e4b809bec227862473, type: 3}
@@ -80,7 +80,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Peter_RestAtHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 20, y: 21}
+    m_actionTimeRange: {x: 19.5, y: 20.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   ActionDays: 62

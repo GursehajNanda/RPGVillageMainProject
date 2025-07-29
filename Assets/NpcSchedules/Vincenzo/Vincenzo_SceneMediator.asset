@@ -17,5 +17,5 @@ MonoBehaviour:
     m_activeScene: MainVillage
     IsActive: 0
   - m_npcBehaviour: {fileID: 11400000, guid: dd5c45fd916d2c943a551109da016823, type: 2}
-    m_activeScene: BottomVillage
+    m_activeScene: VillageBottom
     IsActive: 0

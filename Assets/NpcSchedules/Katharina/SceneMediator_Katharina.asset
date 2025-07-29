@@ -12,11 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c533b9ddaa2f03459782cbb2a6ea94b, type: 3}
   m_Name: SceneMediator_Katharina
   m_EditorClassIdentifier: 
-  m_npcActiveInScene:
-    m_keyValuePairs:
-    - m_key: MainVillage
-      m_value: 0
-    - m_key: VillageBottom
-      m_value: 0
-  m_npcBehaviours:
-  - {fileID: 11400000, guid: 2dc8e1fb2108235419f7138f6dcd9bb7, type: 2}
+  m_npcDataInScene:
+  - m_npcBehaviour: {fileID: 11400000, guid: 2dc8e1fb2108235419f7138f6dcd9bb7, type: 2}
+    m_activeScene: VillageBottom
+    IsActive: 0

@@ -136,7 +136,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_CollingWeaponAir
     m_weatherType: -1
-    m_actionTimeRange: {x: 8, y: 9}
+    m_actionTimeRange: {x: 8, y: 8.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 7202223696275596926, guid: d7b57d7d132d1dc48949b32494c3ecf4, type: 3}
@@ -150,7 +150,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_GoToWorkshopRestFromCA
     m_weatherType: -1
-    m_actionTimeRange: {x: 9, y: 10}
+    m_actionTimeRange: {x: 8.5, y: 10}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 1521485705521450863, guid: 4745bacdbae41574caeff26f58b52dd6, type: 3}
@@ -176,9 +176,23 @@ MonoBehaviour:
         IsTaskFinished: 0
         IsActionSkippable: 0
         ActionScene: MainVillage
-        NextActionID: Edward_ForgeWeaponForged
+        NextActionID: Edward_GoToForge
     m_weatherType: -1
     m_actionTimeRange: {x: 10.5, y: 11.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -3335479688352135872, guid: 755950acffcc1f24e841cf6d855b226c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToForge
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_ForgeWeaponForged
+    m_weatherType: -1
+    m_actionTimeRange: {x: 11.5, y: 11.75}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 3131885753162453283, guid: ea38b3c2483546645a05cc547e4b32d8, type: 3}
@@ -192,7 +206,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_GoToCWFromForge
     m_weatherType: -1
-    m_actionTimeRange: {x: 11.5, y: 12}
+    m_actionTimeRange: {x: 11.75, y: 12}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 5829315517158245145, guid: 027c593f883a4914eab15c30e94bc64f, type: 3}
@@ -262,7 +276,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_GoForgeFinishToWorkshopRest
     m_weatherType: -1
-    m_actionTimeRange: {x: 14.5, y: 16.5}
+    m_actionTimeRange: {x: 14.5, y: 15}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -1860318393531205274, guid: 5ca1df195b2f0274a910e67580614b86, type: 3}
@@ -276,7 +290,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_RestAtWorkShop
     m_weatherType: -1
-    m_actionTimeRange: {x: 16.5, y: 17.5}
+    m_actionTimeRange: {x: 15, y: 15.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -1271377061546871835, guid: e1320f0ad52fd2d4193a532d7b4fa0e8, type: 3}
@@ -290,7 +304,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Edward_LeaveWorkShop
     m_weatherType: -1
-    m_actionTimeRange: {x: 17.5, y: 20}
+    m_actionTimeRange: {x: 15.5, y: 20}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 1677629838117426833, guid: 47b8ba7ad7d50ba4ebb0ef16b51b9a83, type: 3}

@@ -44,14 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d1e373abe9d964aa99b7186e3ab1c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_actionId: Edward_ForgeWeapon
+  m_actionId: Edward_ForgeWeaponForged
   m_haveStartPostion: 1
   m_startingPosition: {x: 22.624, y: 0.71}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   IsNotPatrolAction: 1
-  HaveActionState: 1
+  HaveActionState: 0
   m_actionStates:
     Up: ForgingWeapon
     Down: ForgingWeapon
@@ -62,4 +62,5 @@ MonoBehaviour:
     m_dialogues:
       m_keyValuePairs: []
   m_startGameEvents: []
-  m_endGameEvents: []
+  m_endGameEvents:
+  - {fileID: 11400000, guid: 77c069e80b972d84bbf76990dc69b351, type: 2}

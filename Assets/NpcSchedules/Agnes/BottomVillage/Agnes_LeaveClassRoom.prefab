@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Agnes_LeaveClassRoom
   m_haveStartPostion: 1
-  m_startingPosition: {x: 0, y: 1}
+  m_startingPosition: {x: 34.256, y: -0.547}
   m_sortingLayerName: InteriorPlayer
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: -1, y: 0}

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Peter_GoToPlayingSpot
   m_haveStartPostion: 1
-  m_startingPosition: {x: 9.281, y: 0.45}
+  m_startingPosition: {x: 9.281, y: 0.05}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
@@ -77,7 +77,7 @@ MonoBehaviour:
     Left: 
     Right: 
   m_usePathfinding: 1
-  m_destinationPosition: {x: 4.77, y: -0.81}
+  m_destinationPosition: {x: 5.06, y: -0.46}
   m_smothingfactor: 2.5
   m_distBetweenWayPoints: 0.4
   m_pathUpdateInterval: 0.5

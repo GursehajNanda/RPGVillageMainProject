@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_actionId: Vincenzo_GoToRestaraunt
   m_haveStartPostion: 1
-  m_startingPosition: {x: -0.44, y: 7.5}
+  m_startingPosition: {x: -0.45, y: 7.14}
   m_sortingLayerName: Player
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}

@@ -51,12 +51,12 @@ MonoBehaviour:
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   IsNotPatrolAction: 1
-  HaveActionState: 0
+  HaveActionState: 1
   m_actionStates:
-    Up: 
-    Down: 
-    Left: 
-    Right: 
+    Up: CookingVegetables
+    Down: CookingVegetables
+    Left: CookingVegetables
+    Right: CookingVegetables
   IsNotDilaogueAction: 0
   m_actionDialogue:
     m_dialogues:

@@ -36,15 +36,15 @@ MonoBehaviour:
         IsTaskFinished: 0
         IsActionSkippable: 1
         ActionScene: MainVillage
-        NextActionID: Catherine_GoToHouseFromRestaraunt
+        NextActionID: Catherine_GoToRestaraunt
     m_weatherType: -1
     m_actionTimeRange: {x: 6, y: 6.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
-  - m_action: {fileID: 4301511791644987029, guid: 6b075071e4cdd5f458209bb3cac897c5, type: 3}
+  - m_action: {fileID: -6626586101584024564, guid: 3c50cf790c0ac534ea7cd42bcdbf1c94, type: 3}
     m_taksMediator:
       m_npcStates:
-        ActionID: Catherine_GoToHouseFromRestaraunt
+        ActionID: Catherine_GoToRestaraunt
         CanProceed: 0
         ActionStarted: 0
         IsTaskFinished: 0

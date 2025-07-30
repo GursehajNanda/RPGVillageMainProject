@@ -209,5 +209,5 @@ MonoBehaviour:
     m_actionTimeRange: {x: 21, y: 22}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
-  ActionDays: 62
+  ActionDays: -1
   m_sceneMediator: {fileID: 11400000, guid: b4a968ce426db16408b086980eb610da, type: 2}

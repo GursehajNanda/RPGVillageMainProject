@@ -1,0 +1,213 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Margaret_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: -3186075998679220294, guid: 136cc91b7bee72b4391c57d25bd4ee51, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_StayAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_ExitRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20.5, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5870766742584327794, guid: e15cb5cbdb2e4a242a49b57e7b513b8a, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_ExitRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_GoToHouseRest
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8003191606375081388, guid: e9499cdd561d6c8468fb6a7f67d90519, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_GoToHouseRest
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_StayAtHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6195504707950136646, guid: 779b5ce768c6e564cb6f608c65444556, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_StayAtHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Margaret_ExitHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 1509016221197190233, guid: 5cda902bc7b214740a75ad87e9b2e7a0, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_ExitHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_GoToRestarauntFromHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8.5, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3051437568388660886, guid: c84d36ee9d4da2d46b9621e895b7020b, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_GoToRestarauntFromHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_GoToRestarauntSpot
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9, y: 10}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -3972560694079727460, guid: 228f2eb2a666dab4597223e699527d6c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_GoToRestarauntSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10, y: 10.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 8162808849882860932, guid: 19baa8c563312d84096cf30ef3b47c57, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Margaret_LeaveRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10.5, y: 17.8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5261018522120406129, guid: 37d3a1ce30c783c4a85eb344ec5d5515, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_LeaveRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_GoToHomeFromRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.8, y: 18.2}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7701955899761555596, guid: 339190633fa080e4f9c399fad052fb9d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_GoToHomeFromRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_EnterHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.2, y: 19}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -4533404852321101922, guid: 0b064e22d748edf4caff6c0e81bbb187, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_EnterHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_StayAtHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19, y: 19.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6195504707950136646, guid: 779b5ce768c6e564cb6f608c65444556, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_StayAtHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Margaret_GoToUpStairs
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.25, y: 19.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5449035009688799212, guid: 0fbb5750005d2ce4ba596d313987dd6f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_GoToUpStairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_EnterRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.5, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5634940136248018018, guid: 35111b42d1788ef4180efcdac407b36e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Margaret_EnterRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Margaret_StayAtHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20, y: 20.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: 62817ac199289b849acb2f8747d5004a, type: 2}

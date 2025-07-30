@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Vincenzo_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: 8699804205548541802, guid: 90eb3bb294f15ec40a2de3628438071c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_StayAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_LeaveHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.5, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -602152311404901639, guid: 0e00a834c24d16941877175174e26abc, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_LeaveHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7034881014639213440, guid: 865b55447a1221c499dac01907e22d5e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_EnterRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -3609673433932661109, guid: cf75b8b4bf9af564bb4ca0558ca3c7fd, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_EnterRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_StayAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8.5, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7073183915590153419, guid: 225e962ac3f781944b67130b2829a6bf, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_StayAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_ExitRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9, y: 17.6}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7156806148884074880, guid: ef947dfb2b03ac24b9b075134a13c95f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_ExitRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_GoToHomeFromRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.6, y: 18}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -1015131164829322498, guid: 323f4369d5710df4687ef201b5143012, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_GoToHomeFromRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_EnterHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18, y: 19}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 1044944299124813666, guid: e9acc4736a09b5e499d788d25b76c8ac, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Vincenzo_EnterHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Vincenzo_StayAtHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19, y: 19.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: a1bd3ce4db5c5424b9882ce7598c169f, type: 2}

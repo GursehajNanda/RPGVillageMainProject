@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Jeanne_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: 2591817321778946996, guid: 74d374d204ebd1148a18c77043828e89, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_NightStayAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Jeanne_GoToWorkdShiftFromRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20, y: 5.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3358887575665335784, guid: c811df644d06d8244be5421d518c1304, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_GoToWorkdShiftFromRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_DoWorkShift
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.5, y: 6}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5921365749947250018, guid: 9b3d26b91eb11084ebbeac38b0e731ee, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_DoWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Jeanne_ExitMotelFromWorkShift
+    m_weatherType: -1
+    m_actionTimeRange: {x: 6, y: 6.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6185918072578452797, guid: 99d913a56dd0a6f4c99f0a82e0959451, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_ExitMotelFromWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_GoToRestarauntFromHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 6.5, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4286997460327741183, guid: ab0e6d83cf1938f47b3c27fa51f44114, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_GoToRestarauntFromHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_GoToRestaranutSpot
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -9003087463407500443, guid: dace38b98bb94ed46b856cc2650e1914, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_GoToRestaranutSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5692595268906405826, guid: 8f4041cdee61038419d738d37e33d4b7, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Jeanne_AppreactingPerformace
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8, y: 10.1}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 2427799854559169367, guid: 4ef76de8726de9a4882571d783a97e3a, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_AppreactingPerformace
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10.1, y: 10.2}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5692595268906405826, guid: 8f4041cdee61038419d738d37e33d4b7, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Jeanne_LeaveRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10.2, y: 17.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6183120349471740236, guid: a598455669024e74599c0bed1f4cc17a, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_LeaveRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_GoHomeFromRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.5, y: 18}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3311970194864683743, guid: 2e90db0f62d2f12458558de55f31cbe3, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_GoHomeFromRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_EnterMotelToWorkShift
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18, y: 19}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -3911869899314210834, guid: 5ca92a1202547ed4b883d4e4782b5486, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_EnterMotelToWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_GoToRoomFromWorkShift
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19, y: 19.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8940574810672153550, guid: ca26633eaeb84b84aa99ba62c7aac59f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Jeanne_GoToRoomFromWorkShift
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Jeanne_NightStayAtHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.5, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: c1714b42664bf284387fedcf14669db3, type: 2}

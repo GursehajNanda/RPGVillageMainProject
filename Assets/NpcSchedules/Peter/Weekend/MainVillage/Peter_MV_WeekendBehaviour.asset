@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Peter_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: 1860747116786424709, guid: ac601a272f873714abc61546d302a390, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_RestAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Peter_LeaveHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.5, y: 8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 6109924202001680145, guid: dcc0751099b1f6348826857e03c71a01, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_LeaveHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Peter_GoToPlayingSpot
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 8685822269066766518, guid: be15f630f06b99e45980feaa09aab8c2, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_GoToPlayingSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Peter_PlayWithBall
+    m_weatherType: 43
+    m_actionTimeRange: {x: 9, y: 10}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 4
+  - m_action: {fileID: -6212024842949781663, guid: 6e6d0a9ed7491424a928f3cfae887be3, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_PlayWithBall
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Peter_GoHomeFromPlayingSpot
+    m_weatherType: 43
+    m_actionTimeRange: {x: 10, y: 17}
+    m_isOutDoorAction: 1
+    m_weatherFailsActionIndex: 4
+  - m_action: {fileID: 8087391872371057067, guid: 6984588563a36c544808f30ed6d46232, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_GoHomeFromPlayingSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Peter_EnterHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17, y: 17.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5262212345664414530, guid: ff97d43e4f8118e4b809bec227862473, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Peter_EnterHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Peter_RestAtHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.5, y: 18.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: 1a6fe987d94f8024cb8e034867231bdb, type: 2}

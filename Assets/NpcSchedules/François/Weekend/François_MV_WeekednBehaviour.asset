@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: "Fran\xE7ois_MV_WeekednBehaviour"
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: -8595896926396293367, guid: 7b69ae1a780143e4caae6501c14e1600, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_RestAtRoom"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_ExitHouse"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20.25, y: 5.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7740497458349796280, guid: 45aedc4a7d7283f4da6e5a58ec513786, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_ExitHouse"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_GoToRestarauntFromHouse"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.25, y: 5.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4286997460327741183, guid: 99f3693001ed8484d9634b4a9f40141f, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_GoToRestarauntFromHouse"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_GoToKitchen"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 5.75, y: 6.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 674435279301918092, guid: 9eaf723d9cd1db949b71273575b79f13, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_GoToKitchen"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_CookAtKitchen"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 6.75, y: 7.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 8195452104324173806, guid: 749562ff2642942438f02c5083ff0bab, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_CookAtKitchen"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_LeaveRestaraunt"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.25, y: 18.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4728501846577113824, guid: 4409f23c6d10b0640ab319cd64ae1398, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_LeaveRestaraunt"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_GoHomeFromRestaraunt"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.25, y: 18.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3311970194864683743, guid: 5b8a254acf039fd4eb7a27613957a985, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_GoHomeFromRestaraunt"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_EnterHouse"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.75, y: 19.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 4535018422827447001, guid: 15f998c18a255004f9a02ee1fb170d28, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: "Fran\xE7ois_EnterHouse"
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: "Fran\xE7ois_RestAtRoom"
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.75, y: 20.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: e51f4fbea0974a344bfe1d9d40de59e7, type: 2}

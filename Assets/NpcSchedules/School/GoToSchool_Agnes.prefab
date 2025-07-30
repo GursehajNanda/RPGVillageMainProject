@@ -87,4 +87,7 @@ MonoBehaviour:
   m_teleportationPos: {x: 0, y: 0}
   m_teleportSortingLayerName: 
   m_teleportSortingLayerOrder: 0
+  m_eventWeatherType: 20
+  m_affectSpeed: 1
+  m_newSpeed: 2
   m_useFollowSpline: 0

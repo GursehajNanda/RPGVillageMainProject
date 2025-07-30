@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Lorenzo_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: -45016441650244667, guid: 89088b1dd5f65454281ebcc4ba242411, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Lorenzo_NightStayAtHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Lorenzo_NightStayAtHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 0, y: 23}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: 91a336edf45a05e4aad22275517dd1f2, type: 2}

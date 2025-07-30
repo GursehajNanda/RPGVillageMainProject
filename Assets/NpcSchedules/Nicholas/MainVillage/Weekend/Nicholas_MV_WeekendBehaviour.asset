@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Nicholas_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: -5008950345943340519, guid: eb61573c17e2c654da07a4f157e77c3e, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_Rest
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVIllage
+        NextActionID: Nocholas_LeaveHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5809549595895992182, guid: d42008db925a15b438c44f2ae70fe3f7, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nocholas_LeaveHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nocholas_GoToRestarauntFromHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 146551521785267902, guid: 1159537a30aa2694fa24c4702f1f6951, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nocholas_GoToRestarauntFromHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_GoToRestarantSpot
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -6157089777985740343, guid: 03cba4d1575cabc42b949eb364bf19e8, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_GoToRestarantSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8.5, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5866212474003337815, guid: 7ba97ffb654dd4746bf498b344674935, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVIllage
+        NextActionID: Nichola_AppreciatingPerformace
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9, y: 10.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -8610895969766158939, guid: a1798efafde054741b2875424c153328, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nichola_AppreciatingPerformace
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10.5, y: 10.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 5866212474003337815, guid: 7ba97ffb654dd4746bf498b344674935, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_LeaveRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 10.75, y: 17.75}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -6328039584475015332, guid: 0c2f20e46bc353f4fb7e20a4fada281b, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_LeaveRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_GoToHomeFromRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 17.75, y: 18.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5461535219876013747, guid: 24843466f9d1bdc438ce1f15c6ba67a9, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_GoToHomeFromRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_EnterHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.25, y: 19.25}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -5074271515077420782, guid: 5d55ac67d141b854f96ffe9293a497ce, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Nicholas_EnterHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVIllage
+        NextActionID: Nicholas_Rest
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.25, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: 0494cc8d96dcca54bb25fb6375631368, type: 2}

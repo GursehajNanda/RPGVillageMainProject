@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96226d47a2e86a4ba8e4c3e7883ed1a, type: 3}
+  m_Name: Edward_MV_WeekendBehaviour
+  m_EditorClassIdentifier: 
+  m_actionTask:
+  - m_action: {fileID: 6197950982033076514, guid: 683a38e9321db404d868577da5479e94, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtHouse
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Edward_ExitRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20.5, y: 7}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -444090792427356661, guid: f8910e1fd63b35f40a147968cc157553, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ExitRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_ExitHouseFromUpstairs
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7, y: 7.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3589453553736726843, guid: e5b91fed88385694cb4981b07fad4e21, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_ExitHouseFromUpstairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToRestarauntFromHome
+    m_weatherType: -1
+    m_actionTimeRange: {x: 7.5, y: 8}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 3051437568388660886, guid: ac85cbef04836524b97f6a1bea41d48c, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToRestarauntFromHome
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToRestarauntSpot
+    m_weatherType: -1
+    m_actionTimeRange: {x: 8, y: 9}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 1147995424728478019, guid: c4e4e2d4ffe22f749b3329c9ac80bedd, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToRestarauntSpot
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9, y: 9.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -7505490052072485195, guid: d40cebfaf6eccac429046fb3bd6b4c28, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_RestAtRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 0
+        ActionScene: MainVillage
+        NextActionID: Edward_LeaveRestarunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 9.5, y: 18}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -4418681866887937154, guid: d67e373c31520914292f49ded6c6b874, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_LeaveRestarunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_GoToHomeFromRestaraunt
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18, y: 18.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: 7701955899761555596, guid: dadaaa26fe568c54c9b8d1dc77e03a2d, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_GoToHomeFromRestaraunt
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_EnterHouseToUpstairs
+    m_weatherType: -1
+    m_actionTimeRange: {x: 18.5, y: 19.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -2136118495433557108, guid: 52d4a2720bd95654c9317a0ea0ad9bdb, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_EnterHouseToUpstairs
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_EnterRoom
+    m_weatherType: -1
+    m_actionTimeRange: {x: 19.5, y: 20}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  - m_action: {fileID: -444090792427356661, guid: b48c678b958ea714fa9f1ad3b1ad18e7, type: 3}
+    m_taksMediator:
+      m_npcStates:
+        ActionID: Edward_EnterRoom
+        CanProceed: 0
+        ActionStarted: 0
+        IsTaskFinished: 0
+        IsActionSkippable: 1
+        ActionScene: MainVillage
+        NextActionID: Edward_RestAtHouse
+    m_weatherType: -1
+    m_actionTimeRange: {x: 20, y: 20.5}
+    m_isOutDoorAction: 0
+    m_weatherFailsActionIndex: 0
+  ActionDays: 65
+  m_sceneMediator: {fileID: 11400000, guid: a7960b32221fa7d499b37de29499b2c5, type: 2}

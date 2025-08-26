@@ -24,7 +24,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Agnes_GoToDownstairs
     m_weatherType: -1
-    m_actionTimeRange: {x: 20.5, y: 5}
+    m_actionTimeRange: {x: 20.5, y: 6}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -5829441571077732326, guid: ea7d307f7c9621c4e9e86cb0c1eb504e, type: 3}
@@ -38,7 +38,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Agnes_LeaveHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 5, y: 5.5}
+    m_actionTimeRange: {x: 6, y: 6.25}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -6288521487168414050, guid: 1d2a2653878a77643a46da561523f3e3, type: 3}
@@ -52,7 +52,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Agnes_MV_GoToSchool
     m_weatherType: -1
-    m_actionTimeRange: {x: 5.5, y: 6}
+    m_actionTimeRange: {x: 6.25, y: 6.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -8483581458719254664, guid: 7d057eae02986dd4783b3f8225e27697, type: 3}
@@ -66,7 +66,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: GoToSchool
     m_weatherType: -1
-    m_actionTimeRange: {x: 6, y: 7}
+    m_actionTimeRange: {x: 6.5, y: 7.2}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -4084980022823183362, guid: e71c42ac62e5b0a4080841ba5558ea47, type: 3}
@@ -80,7 +80,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Agnes_EnterHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 18.5, y: 19.5}
+    m_actionTimeRange: {x: 18.7, y: 19.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 773256591930172912, guid: b2511a21e057f2d48bf618ca685b299d, type: 3}

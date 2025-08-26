@@ -61,7 +61,9 @@ MonoBehaviour:
   m_actionDialogue:
     m_dialogues:
       m_keyValuePairs: []
-  m_startGameEvents: []
+  m_startGameEvents:
+  - m_event: {fileID: 11400000, guid: ac21e08e52bb6cc448a8d13dae0bf486, type: 2}
+    m_eventDelay: 0
   m_endGameEvents: []
   m_npcMoveSpeed: 1
   m_moveVectorEndPoint: {x: 0, y: -1}
@@ -87,4 +89,7 @@ MonoBehaviour:
   m_teleportationPos: {x: -0.475, y: 7.55}
   m_teleportSortingLayerName: Player
   m_teleportSortingLayerOrder: 0
+  m_eventWeatherType: 0
+  m_affectSpeed: 0
+  m_newSpeed: 0
   m_useFollowSpline: 1

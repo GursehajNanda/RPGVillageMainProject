@@ -24,7 +24,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Peter_LeaveHome
     m_weatherType: -1
-    m_actionTimeRange: {x: 20.5, y: 5}
+    m_actionTimeRange: {x: 20.5, y: 6}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: 6109924202001680145, guid: dcc0751099b1f6348826857e03c71a01, type: 3}
@@ -38,7 +38,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: Peter_MV_GoToSchool
     m_weatherType: -1
-    m_actionTimeRange: {x: 5, y: 6}
+    m_actionTimeRange: {x: 6, y: 6.5}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -90228393748397996, guid: bd8ba129081f3b149a3028829ba0c92f, type: 3}
@@ -52,7 +52,7 @@ MonoBehaviour:
         ActionScene: MainVillage
         NextActionID: GoToSchool
     m_weatherType: -1
-    m_actionTimeRange: {x: 6, y: 7}
+    m_actionTimeRange: {x: 6.5, y: 7}
     m_isOutDoorAction: 0
     m_weatherFailsActionIndex: 0
   - m_action: {fileID: -7619271098057048476, guid: e2651ced0d7622949a0040face9d505e, type: 3}

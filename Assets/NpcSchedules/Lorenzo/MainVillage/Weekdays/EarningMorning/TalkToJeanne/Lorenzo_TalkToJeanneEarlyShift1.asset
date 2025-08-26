@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_dialogueID: Lorenzo_TalkToJeanneEarlyShift1
   m_dialogue:
-  - Hey, So what should I do first today?
+  - Hey, So what should I do today?
   m_responses: []

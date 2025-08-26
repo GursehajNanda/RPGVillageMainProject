@@ -72,6 +72,6 @@ MonoBehaviour:
   m_npcFaceDirection: {x: 0, y: 1}
   m_isEntryPointForConversation: 1
   m_NumOfInteractingNPCS: 2
+  m_endConversationWaitPeriod: 30
   m_requirePlayerToStarConversation: 0
   m_waitTimeInMinsToStarConversation: 0
-  m_endConversationWaitPeriod: 15

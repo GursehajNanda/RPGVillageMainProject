@@ -62,5 +62,6 @@ MonoBehaviour:
     m_dialogues:
       m_keyValuePairs: []
   m_startGameEvents:
-  - {fileID: 11400000, guid: cbc4124c670a93646bcc353cc20929a4, type: 2}
+  - m_event: {fileID: 11400000, guid: cbc4124c670a93646bcc353cc20929a4, type: 2}
+    m_eventDelay: 0
   m_endGameEvents: []

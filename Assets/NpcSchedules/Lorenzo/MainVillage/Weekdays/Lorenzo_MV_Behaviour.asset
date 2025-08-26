@@ -87,13 +87,13 @@ MonoBehaviour:
     m_taksMediator:
       m_npcStates:
         ActionID: Lorenzo_SweepingPatrol
-        CanProceed: 0
-        ActionStarted: 0
+        CanProceed: 1
+        ActionStarted: 1
         IsTaskFinished: 0
         IsActionSkippable: 0
         ActionScene: MainVillage
         NextActionID: Lorezno_GoToMotel
-    m_weatherType: 59
+    m_weatherType: 43
     m_actionTimeRange: {x: 7, y: 10}
     m_isOutDoorAction: 1
     m_weatherFailsActionIndex: 6

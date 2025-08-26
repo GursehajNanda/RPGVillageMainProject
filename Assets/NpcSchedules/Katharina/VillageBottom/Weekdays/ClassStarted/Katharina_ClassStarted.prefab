@@ -51,7 +51,7 @@ MonoBehaviour:
   m_sortingLayerOrder: 0
   m_initialMoveVec: {x: 0, y: -1}
   IsNotPatrolAction: 1
-  HaveActionState: 1
+  HaveActionState: 0
   m_actionStates:
     Up: Talking
     Down: Talking

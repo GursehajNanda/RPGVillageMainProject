@@ -7,36 +7,13 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] TMP_Text m_simulationButtonText;
     [SerializeField] TMP_Text m_timeText;
-    [SerializeField] private TMP_Dropdown m_weekDaysDropDown;
+    [SerializeField] private TMP_Dropdown m_weatherDropDown;
     [SerializeField] private ParticleSystem m_rain;
     [SerializeField] private VisualEffect m_fog;
 
     private int m_startingSpeeed;
-    private int m_previousDay = 4;
-    private int m_currentDay = 4;
     ClimateData m_climateData;
-
-    private static readonly Dictionary<int, int> WeekdayToGameDay = new()
-    {
-        { 0, 10 }, // Sunday
-        { 1, 4 },  // Monday
-        { 2, 5 },
-        { 3, 6 },
-        { 4, 7 },
-        { 5, 8 },
-        { 6, 9 }   // Saturday
-    };
-
-    private static readonly Dictionary<int, int> GameDayToWeekday = new()
-    {
-        { 10, 0 }, // Sunday
-        { 4, 1 },  // Monday
-        { 5, 2 },
-        { 6, 3 },
-        { 7, 4 },
-        { 8, 5 },
-        { 9, 6 }   // Saturday
-    };
+  
 
     private void Awake()
     {
@@ -46,33 +23,24 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         m_startingSpeeed = 1;
-        m_previousDay = m_currentDay;
         m_climateData.SetMonth(Month.June);
-        OnDayChanged();
         ClearWeather();
     }
 
     void OnEnable()
     {
-       m_weekDaysDropDown.onValueChanged.AddListener(OnDropdownChanged);
+     
+        m_weatherDropDown.onValueChanged.AddListener(OnWeatherDropdownChanged);
     }
 
     void OnDisable()
     {
-       m_weekDaysDropDown.onValueChanged.RemoveListener(OnDropdownChanged);
+       m_weatherDropDown.onValueChanged.RemoveListener(OnWeatherDropdownChanged);
     }
 
 
     private void Update()
     {
-        m_currentDay = m_climateData.GetDateTimeYearData().Day;
-
-        if (m_previousDay != m_currentDay)
-        {
-            m_previousDay = m_currentDay;
-            OnDayChanged();
-        }
-
         UpateTime();
     }
 
@@ -90,24 +58,25 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void OnDayChanged()
-    {
-        if (GameDayToWeekday.TryGetValue(m_currentDay, out int weekdayIndex))
-        {
-            m_weekDaysDropDown.SetValueWithoutNotify(weekdayIndex);
-            m_weekDaysDropDown.RefreshShownValue();
-        }
+  
 
-    }
-    private void OnDropdownChanged(int selectedIndex)
+    private void OnWeatherDropdownChanged(int selectedIndex)
     {
-        if (WeekdayToGameDay.TryGetValue(selectedIndex, out int newDay))
+        if(selectedIndex == 0)
         {
-            m_climateData.SetDayInMonth(newDay);
+            ClearWeather();
+        }
+        else if( selectedIndex == 1)
+        {
+            AddRain();
+        }
+        else
+        {
+            AddFog();
         }
     }
 
-    public void ClearWeather()
+    private void ClearWeather()
     {
         m_climateData.RemoveRunningWeather(WeatherType.Rainy);
         m_climateData.RemoveRunningWeather(WeatherType.Cloudy);
@@ -119,13 +88,13 @@ public class GameController : MonoBehaviour
     }
 
 
-    public void AddClouds()
+    private void AddClouds()
     {
         m_climateData.SetCloudStrength(0.8f);
         m_climateData.AddRunningWeather(WeatherType.Cloudy, WeatherBehaviour.Heavy);
     }
 
-    public void AddRain()
+    private void AddRain()
     {
         AddClouds();
         m_climateData.RemoveRunningWeather(WeatherType.Clear);
@@ -134,7 +103,7 @@ public class GameController : MonoBehaviour
     }
 
 
-    public void AddFog()
+    private void AddFog()
     {
         m_fog.Play();
         m_climateData.RemoveRunningWeather(WeatherType.Clear);
